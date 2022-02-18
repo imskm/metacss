@@ -18,6 +18,10 @@ $item-text-hover-color: $black-003;
 		max-width: $container-width;
 		margin-left: auto;
 		margin-right: auto;
+
+		.navbar-controls {
+			display: none;
+		}
 	}
 
 	&.has-three-columns {
@@ -162,6 +166,103 @@ $item-text-hover-color: $black-003;
 			opacity: 1;
 			visibility: visible;
 			transform: translateY(0);
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	.navbar {
+		height: auto;
+		position: fixed;
+		top: 12px;
+		left: 12px;
+		right: 12px;
+
+		background-color: $white-color;
+		border-radius: $radius;
+
+		.navbar-wrapper {
+			display: flex;
+
+			.navbar-left {
+				width: 100%;
+				padding: 1rem;
+				.navbar-content {
+					display: flex;
+					width: 100%;
+					justify-content: space-between;
+				}
+			}
+			.navbar-center, .navbar-right {
+				display: none;
+			}
+		}
+
+		&.is-open {
+			box-shadow: 10px 10px 20px rgba($black-color, .15);
+			animation: fade-scale 300ms ease-out alternate;
+
+			.navbar-wrapper {
+				display: block;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+
+				.navbar-left {
+					display: none;
+				}
+				.navbar-center {
+					display: block;
+					.navbar-content {
+						display: block;
+						width: 100%;
+						.navbar-menu {
+							display: block;
+						}
+					}
+				}
+				.navbar-right {
+					display: block;
+					.navbar-content {
+						display: block;
+						width: 100%;
+						.navbar-menu {
+							display: block;
+						}
+					}
+				}
+
+				.navbar-controls {
+					display: block;
+					margin-bottom: 1rem;
+					&-wrapper {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 0 1.25rem;
+
+						.navbar-brand img {
+							height: 2rem;
+						}
+
+						.navbar-toggler {
+							@include button-reset;
+							padding: 8px;
+							background-color: transparent;
+							color: $black-003;
+							font-size: 1.25rem;
+						}
+					}
+				}
+
+				.navbar-menu {
+					&-item {
+						display: flex;
+						align-items: center;
+						height: 24px;
+						pointer-events: none;
+					}
+				}
+			}
 		}
 	}
 }

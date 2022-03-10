@@ -1,7 +1,7 @@
 $navbar-height: 3.75rem;
 $item-text-size: .875rem;
-$item-text-color: $black-005;
-$item-text-hover-color: $black-003;
+$item-text-color: #222222;
+$item-text-hover-color: $black-color;
 
 .navbar {
 	background-color: $black-001;
@@ -37,10 +37,23 @@ $item-text-hover-color: $black-003;
 		}
 	}
 
+	.navbar-hamburger {
+		display: none;
+		cursor: pointer;
+		width: 40px;
+		height: 40px;
+		background-color: rgba($white-color, .7);
+		font-weight: 600;
+		border-radius: $radius;
+	}
+
 	.navbar-menu {
 		padding: 0;
 		margin: 0;
 		.navbar-menu-item {
+			display: flex;
+			align-items: center;
+			height: 2rem;
 			margin-left: 1.25rem;
 			margin-right: 1.25rem;
 			position: relative;
@@ -51,6 +64,7 @@ $item-text-hover-color: $black-003;
 				color: $item-text-color;
 				line-height: 1;
 				cursor: pointer;
+
 			}
 			&::after {
 				content: "";
@@ -58,12 +72,16 @@ $item-text-hover-color: $black-003;
 				height: 2px;
 				position: absolute;
 				left: 0;
-				bottom: -10px;
+				bottom: 0;
 				background-color: rgba($black-color, .5);
 				opacity: 0;
 				transition: all 300ms ease-in;
 			}
 			&:hover {
+				.navbar-menu-item-link {
+					color: $item-text-hover-color;
+					text-shadow: 1px 1px 1px rgba($item-text-hover-color, .2);
+				}
 				&::after {
 					opacity: 1;
 				}
@@ -198,6 +216,12 @@ $item-text-hover-color: $black-003;
 			}
 		}
 
+		.navbar-hamburger {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 		&.is-open {
 			box-shadow: 10px 10px 20px rgba($black-color, .15);
 			animation: fade-scale 300ms ease-out alternate;
@@ -258,8 +282,10 @@ $item-text-hover-color: $black-003;
 					&-item {
 						display: flex;
 						align-items: center;
-						height: 24px;
-						pointer-events: none;
+
+						&-link {
+							font-weight: 600;
+						}
 					}
 				}
 			}

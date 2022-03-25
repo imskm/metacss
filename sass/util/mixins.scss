@@ -12,3 +12,44 @@
 	position: relative;
 	z-index: 2;
 }
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fade-scale {
+	0% {
+		transform: scale(.1);
+		opacity: .1;
+		transform-origin: top right;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+		transform-origin: top right;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: 450px) {
+		@content;
+	}
+}
+
+@mixin tab {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (max-width: 1376px) {
+		@content;
+	}
+}

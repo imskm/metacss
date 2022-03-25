@@ -1,0 +1,19 @@
+.legend-line {
+	white-space: nowrap;
+	display: flex;
+	line-height: 1.5;
+	align-items: center;
+
+	// @TODO Add gap after text without span tag
+	span {
+		padding-right: 12px;
+		color: #888888
+	}
+
+	&::after {
+		content: "";
+		width: 95%;
+		height: 1px;
+		background-color: #888888;
+	}
+}

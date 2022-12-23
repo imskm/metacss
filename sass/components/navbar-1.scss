@@ -2,10 +2,23 @@ $navbar-height: 3.75rem;
 $item-text-size: .875rem;
 $item-text-color: #222222;
 $item-text-hover-color: $black-color;
+$open-navbar-bg-color-mobile: $white-color;
 
 .navbar {
 	background-color: $black-001;
 	height: $navbar-height;
+
+	&.top {
+		position: absolute;
+		z-index: 9;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	&.bg-transparent {
+		background-color: transparent;
+	}
 
 	.navbar-wrapper, .navbar-left, .navbar-center, .navbar-right, .navbar-content, .navbar-menu {
 		display: flex;
@@ -188,15 +201,15 @@ $item-text-hover-color: $black-color;
 	}
 }
 
-@media (max-width: 720px) {
-	.navbar {
+@include tab {
+	.navbar, .navbar.top {
 		height: auto;
 		position: fixed;
 		top: 12px;
 		left: 12px;
 		right: 12px;
+		z-index: 9;
 
-		background-color: $white-color;
 		border-radius: $radius;
 
 		.navbar-wrapper {
@@ -225,6 +238,7 @@ $item-text-hover-color: $black-color;
 		&.is-open {
 			box-shadow: 10px 10px 20px rgba($black-color, .15);
 			animation: fade-scale 300ms ease-out alternate;
+			background-color: $open-navbar-bg-color-mobile;
 
 			.navbar-wrapper {
 				display: block;

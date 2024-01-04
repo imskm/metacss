@@ -1,0 +1,131 @@
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.popup-card {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: block;
+	background: linear-gradient( to bottom , #87ceeb80,#dcacdcd6,#e9a186ab , white 70%);
+	padding: 20px 20px 50px 20px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, .15);
+	border-radius: 18px;
+}
+
+.close-btn {
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	width: 30px;
+	height: 30px;
+}
+
+.popup-card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	margin-top: 20px;
+}
+
+.popup-card-body-header {
+	padding: 10px 14px ;
+	border: 2px solid black;
+	border-radius: 16px;
+}
+
+.header-text {
+	text-align: center;
+	font-weight: 400;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.popup-card-body-title {
+	width: 100%;
+	max-width: 500px;
+}
+
+.title-text {
+	font-size: 52px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.popup-card-body-subtitle {
+	width: 100%;
+	max-width: 550px;
+	
+}
+
+.subtitle-text {
+	font-size: 24px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.popup-card-email-form {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 10px;
+	width: 100%;
+	max-width: 700px;
+}
+
+.email-form-input {
+	padding: 20px;
+	width: 100%;
+	font-size: 20px;
+	border-radius: 6px;
+	border: 1px solid gray;
+}
+
+.email-form-btn {
+	width: 100%;
+	max-width: 120px;
+	border-radius: 6px;
+	font-size: 20px;
+	background-color: #9cb3e7;
+	color: white;
+	border: none;
+}
+
+.popup-section {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.popup-card-footer {
+	width: 100%;
+	max-width: 500px;
+}
+
+.footer-text {
+	font-size: 16px;
+	line-height: 1.5;
+	color: gray;
+	text-align: center;
+}
+
+.open-card {
+	display: flex;
+}

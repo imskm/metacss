@@ -1,0 +1,86 @@
+.close{
+	display: inline-flex;
+	width: 20px;
+	height: 20px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, .5);
+	color: #FFFFFF;
+	line-height: 1;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+}
+.close.is-blue{
+	background-color: rgba(88, 123, 245, .4);
+	color: #587BF5;
+}
+.close.is-red{
+	background-color: rgba(245, 88, 88, .4);
+	color: #F55858;
+}
+.close.is-green{
+	background-color: rgba(64, 182, 97, .4);
+	color: #40B661;
+}
+.close.is-yellow{
+	background-color: rgba(235, 146, 65, .4);
+	color: #FBA04C;
+}
+.tag {
+	font-family: 'Roboto';
+	padding: 0;
+	margin: 0;
+	background: none;
+	outline: 0;
+	border: none;
+	text-decoration: none;
+
+	display: inline-flex;
+	font-size: 16px;
+	background-color: #068932;
+	color: #FFFFFF;
+	padding: 20px 80px 20px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	position: relative;
+}
+
+.tag.is-blue{
+	background-color: #587BF5;
+	color: #e6e6e6;
+}
+.tag.is-red{
+	background-color: #F55858;
+	color: #e6e6e6;
+}
+.tag.is-green{
+	background-color: #40B661;
+	color: #e6e6e6;
+}
+.tag.is-yellow {
+	background-color: #FBA04C;
+	color: #e6e6e6;	
+}
+.tag.is-disableblue {
+	background-color: #afbaed;
+	color:  #3f5ed1;
+	border: 1px solid blue;
+}
+.tag.is-disablered {
+	background-color: #F8C3C3;
+	color: #a14e3b;
+	border: 1px solid red;
+}
+.tag.is-disablegreen{
+	background-color: #C1FFD3;
+	color: #518234;
+	border: 1px solid green;
+}
+
+.tag.is-disableyellow{
+	background-color: #FFECDA;
+	color: #bd914a;
+	border: 1px solid #b88a4b;
+}

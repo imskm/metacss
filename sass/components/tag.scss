@@ -1,0 +1,64 @@
+.tag{
+	font-weight: 400;
+	background: none;
+	outline: 0;
+	border: none;
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-flex;
+	margin: 10px;
+	padding: 10px 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.tag.is-black {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.tag.is-dark {
+	color: #ffffff;
+	background-color: #463939;
+}
+
+.tag.is-light {
+	background-color: #f8f3f3;
+	color: #000;
+}
+
+.tag.is-white {
+	background-color: #fffff;
+	color: #000;
+}
+
+.tag.is-sky {
+	background-color: #44c3ab;
+	color: #ffffff;
+}
+
+.tag.is-indigo {
+	background-color: #4a64ee;
+	color: #ffffff;
+}
+
+.tag.is-blue {
+	background-color: #468fec;
+	color: #ffffff;
+}
+
+.tag.is-green {
+	background-color: #3ab6179c;
+	color: #ffffff;
+}
+
+.tag.is-yellow {
+	background-color: #e7c54e;
+	color: #000;
+}
+
+.tag.is-red {
+	background-color: #d0266f;
+	color: #ffffff;
+}

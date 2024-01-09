@@ -28,8 +28,7 @@
 	background-color: rgba(235, 146, 65, .4);
 	color: #FBA04C;
 }
-.tag {
-	font-family: 'Roboto';
+.notification {
 	padding: 0;
 	margin: 0;
 	background: none;
@@ -47,39 +46,39 @@
 	position: relative;
 }
 
-.tag.is-blue{
+.notification.is-blue{
 	background-color: #587BF5;
 	color: #e6e6e6;
 }
-.tag.is-red{
+.notification.is-red{
 	background-color: #F55858;
 	color: #e6e6e6;
 }
-.tag.is-green{
+.notification.is-green{
 	background-color: #40B661;
 	color: #e6e6e6;
 }
-.tag.is-yellow {
+.notification.is-yellow {
 	background-color: #FBA04C;
 	color: #e6e6e6;	
 }
-.tag.is-disableblue {
+.notification.is-disableblue {
 	background-color: #afbaed;
 	color:  #3f5ed1;
 	border: 1px solid blue;
 }
-.tag.is-disablered {
+.notification.is-disablered {
 	background-color: #F8C3C3;
 	color: #a14e3b;
 	border: 1px solid red;
 }
-.tag.is-disablegreen{
+.notification.is-disablegreen{
 	background-color: #C1FFD3;
 	color: #518234;
 	border: 1px solid green;
 }
 
-.tag.is-disableyellow{
+.notification.is-disableyellow{
 	background-color: #FFECDA;
 	color: #bd914a;
 	border: 1px solid #b88a4b;

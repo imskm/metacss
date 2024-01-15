@@ -1,0 +1,48 @@
+.grids {
+	background-color: #000000;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid-cell {
+	width: 100px;
+	height: 100px;
+	background-color: #000000;
+	border: 2px dashed rgba(45, 45, 45, 0.6);
+	border-left: 0;
+	border-top: 0;
+	position: relative;
+}
+
+
+.grid-cell::before, .grid-cell::after {
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background-color: #606060; 
+	position: absolute;
+	z-index: 99;
+}
+
+.grid-cell::before {
+	top: -4px;
+	right: -4px;
+}
+
+.grid-cell::after {
+	top: 98%;
+	right: -4px;
+}
+
+.grid-cell.is-active {
+	background-color: rgba(22, 22, 22, 1);
+}

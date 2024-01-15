@@ -1,64 +1,56 @@
-.tag{
-	font-weight: 400;
+.tag {
+	padding: 0;
+	margin: 0;
 	background: none;
 	outline: 0;
 	border: none;
 	text-decoration: none;
-	font-size: 20px;
 	display: inline-flex;
-	margin: 10px;
-	padding: 10px 16px;
-	border-radius: 8px;
+	font-size: 12px;
+	padding: 4px 8px;
+	background-color: #068932;
+	color: #FFFFFF;
+	border-radius: 4px;
 	cursor: pointer;
-	border: 1px solid transparent;
+	transition: all 300ms ease;
 }
 
+.tag:hover {
+	background-color: #A0A967;
+}
+.tag.is-grey{
+	background-color: #dedcd7;
+	color: #595c5a;
+}
+.tag.is-white{
+	background-color:  #E0E0E0;
+	color: #333333;
+}
 .tag.is-black {
-	color: #ffffff;
-	background-color: #000000;
+	background-color: #121212;
+	color: #c5d1ce;
 }
-
-.tag.is-dark {
-	color: #ffffff;
-	background-color: #463939;
+.tag.is-lightgreen {
+	background-color: #45ccad;
+	color: #c5d1ce;	
 }
-
-.tag.is-light {
-	background-color: #f8f3f3;
-	color: #000;
-}
-
-.tag.is-white {
-	background-color: #fffff;
-	color: #000;
-}
-
-.tag.is-sky {
-	background-color: #44c3ab;
-	color: #ffffff;
-}
-
-.tag.is-indigo {
-	background-color: #4a64ee;
-	color: #ffffff;
-}
-
 .tag.is-blue {
-	background-color: #468fec;
-	color: #ffffff;
+	background-color: #3432b3;
+	color:  #c5d1ce;
 }
-
-.tag.is-green {
-	background-color: #3ab6179c;
-	color: #ffffff;
+.tag.is-skyblue {
+	background-color: #3891d9;
+	color: #c5d1ce;
 }
-
+.tag.is-green{
+	background-color: #3bc47b;
+	color: #c5d1ce;
+}
 .tag.is-yellow {
-	background-color: #e7c54e;
-	color: #000;
+	background-color: #e3c51e;
+	color: #333333;
 }
-
 .tag.is-red {
-	background-color: #d0266f;
-	color: #ffffff;
+	background-color: #a31c15;
+	color: #c5d1ce;
 }

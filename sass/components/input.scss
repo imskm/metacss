@@ -1,0 +1,37 @@
+.input-boxes {
+	display: flex;
+}
+.input-1 {
+	display: flex;
+	flex-direction: column;
+	padding: 140px 0 0 220px;
+}
+.input-box {
+	width: 400px;
+	// height: 64px;
+	padding:  26px;
+	border-radius: 16px;
+	border: 1px solid #E9E9E9;
+	box-shadow: 0px 4px 16px 0px #0000000D;
+}
+.input-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+.is-light-font {
+	color: #555555;
+}
+.is-dark-font {
+	color: #888888;
+}
+.is-dark {
+	background-color: #222222;
+}
+::placeholder {
+	color: #888888;
+	font-size: 16px;
+	font-weight: 600;
+}

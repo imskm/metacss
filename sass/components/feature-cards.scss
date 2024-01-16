@@ -70,3 +70,16 @@
 		transform: translateX(4px)
 	}
 }
+.feature-card-poster {
+	width: 100%;
+	max-width: 220px;
+	&-img {
+		width: 100%;
+	}
+}
+.card-3 {
+	text-align: center;
+	align-items: center;
+	padding: 64px 32px 0 32px;
+	gap: 20px;
+}

@@ -1,57 +1,45 @@
 .tag {
-	padding: 0;
-	margin: 0;
-	background: none;
-	outline: 0;
-	border: none;
-	text-decoration: none;
-
 	display: inline-flex;
 	font-size: 12px;
 	padding: 4px 8px;
-	background-color: #068932;
-	color: #FFFFFF;
+	background-color: $black-001;
+	color: $black-005;
 	border-radius: 4px;
-	cursor: pointer;
-	transition: all 300ms ease;
 }
 
-.tag:hover {
-	background-color: #A0A967;
-}
-.tag.is-grey{
-	background-color: #dedcd7;
-	color: #595c5a;
-}
 .tag.is-white{
-	background-color:  #E0E0E0;
-	color: #333333;
+	background-color:  $white-color;
+	color: $black-color;
 }
 .tag.is-black {
-	background-color: #121212;
-	color: #c5d1ce;
+	background-color: $black-005;
+	color: $white-color;
 }
-.tag.is-lightgreen {
-	background-color: #45ccad;
-	color: #c5d1ce;	
+.tag.is-dark-black {
+	background-color: $black-color;
+	color: $white-color;
 }
-.tag.is-blue {
-	background-color: #3432b3;
-	color:  #c5d1ce;
+.tag.is-primary {
+	background-color: $green-004;
+	color: $white-color;
 }
-.tag.is-skyblue {
-	background-color: #3891d9;
-	color: #c5d1ce;
+.tag.is-link {
+	background-color: $blue-006;
+	color: $white-color;
 }
-.tag.is-green{
-	background-color: #3bc47b;
-	color: #c5d1ce;
+.tag.is-info {
+	background-color: $blue-010;
+	color: $white-color;
 }
-.tag.is-yellow {
-	background-color: #e3c51e;
-	color: #333333;
+.tag.is-success{
+	background-color: $green-007;
+	color: $white-color;
 }
-.tag.is-red {
-	background-color: #a31c15;
-	color: #c5d1ce;
+.tag.is-warning {
+	background-color: $orange-004;
+	color: $black-005;
+}
+.tag.is-danger {
+	background-color: $red-005;
+	color: $white-color;
 }

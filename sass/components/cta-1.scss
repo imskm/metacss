@@ -1,0 +1,71 @@
+.login_box {
+	display: flex;
+	width: 100%;
+	max-width: 1000px;
+	height: 600px;
+	border-radius: 32px;
+	box-shadow: 0px 16px 72px 0px #00000033;
+	margin: 160px 0 0 100px;
+}
+.login-form {
+	flex: 1;
+	background-color: #D9AFD9;
+	background-color: #000000;
+	color: white;
+	padding: 36px 0 0 0;
+	position: relative;
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+.login-img {
+	flex: 1;
+	background-image: url('https://s3-alpha-sig.figma.com/img/ed00/f66c/9512f93e0e735f4cf78fa4bac1bf8c1a?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hwO8sBFHB30tKVA65TUaN0GgnVd5j98z-UtsJ2HUjYtQwUDvfMAJBzutdnxiU5C81jeV8QKFlLXYMbb97I2v0Z2MG0Tbyxofb-9G3MIWAEK8-YXlnpT~YYGd3jwNH3GD97Y8Gq3jyp3qiFKGKP~2XD5~puE5yVAInXmW0zghX0VBio~CYSDnnXwSfGGuGQ5WGqjRLq~RbI0b3RJ3sz-GFgcJwlqUmOzR5293sJ4sRBPcyfGGU4VizZt2VY9gJ8ECdPoIeiEz1GxV8QWixU8gYKrwpcjocyrS3cYVmUhAwbgi~9i6Ylr6TiAvWf3klSFGYP9oUhV6CnR5kxFLaEbmmA__');
+	background-size: cover;
+	object-fit: cover;
+	border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.form-field {
+	display: flex;
+	flex-direction: column;
+	margin: 26px 46px;
+}
+.label {
+	color: #888888;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0em;
+	text-align: left;
+	padding: 10px 0;
+}
+.input {
+	width: 100%;
+	max-width: 400px;
+	height: 64px;
+	padding: 0 20px;
+	border-radius: 16px;
+	color: #888888;
+	background-color: #222222;
+	border: 1px solid #2C2A2A;
+}
+.submit-button {
+	width: 100%;
+	max-width: 400px;
+	height: 64px;
+	font-weight: 500;
+	font-size: 16px;
+	border: 1px solid #2C2A2A;
+	border-radius: 16px;
+	align-self: center;
+	background-color: #FF001C;
+	color: #ffffff;
+	box-shadow: 0px -2px 2px 0px #FFFFFF26 inset;
+}
+
+::placeholder {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+}

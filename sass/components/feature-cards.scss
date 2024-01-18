@@ -6,6 +6,8 @@
 	width: 100%;
 	height: 100%;
 	background: #726d6d1c;
+	padding: 100px 12px;
+
 	@include tab {
 		flex-direction: column;
 	}

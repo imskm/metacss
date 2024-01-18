@@ -1,81 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Feature Card-1</title>
-	<link rel="stylesheet" type="text/css" href="/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Card-1</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
-	<section class="feature-card-1">
-		  <div class="feature-card advance-card-1">
-		    <div class="feature-card-poster">
-		    	<img class="feature-card-poster-img" src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-		    </div>
-		    <div class="feature-card-text">
-				<div class="feature-card-title">
-					<h1 class="feature-card-title-text">Easy to use</h1>
-				</div>
+  <section class="feature-card-1">
+    <div class="feature-card advance-card-1" onclick="handleCardClick(this)">
+      <div class="feature-card-poster">
+        <img class="feature-card-poster-img" src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      </div>
+      <div class="feature-card-text">
+        <div class="feature-card-title">
+          <h1 class="feature-card-title-text">Easy to use</h1>
+        </div>
+        <div class="feature-card-subtitle">
+          <p class="feature-card-subtitle-text">
+            ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque
+          </p>
+        </div>
+        <a href="/" class="button is-primary is-fullrounded feature-card-cta">Primary</a>
+      </div>
+    </div>
+    
+    <!-- Repeat the above feature card block for other cards -->
 
-				<div class="feature-card-subtitle">
-					<p class="feature-card-subtitle-text">
-						 ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque
-					</p>
-				</div>
-				<a href="/" class="button is-primary is-fullrounded feature-card-cta">Primary</a>
-			</div>
-		  </div>
-		    <div class="feature-card advance-card-1">
-		      <div class="feature-card-poster">
-		      	<img class="feature-card-poster-img" src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-		      </div>
-		      <div class="feature-card-text">
-		  		<div class="feature-card-title">
-		  			<h1 class="feature-card-title-text">Easy to use</h1>
-		  		</div>
+  </section>
 
-		  		<div class="feature-card-subtitle">
-		  			<p class="feature-card-subtitle-text">
-		  				 ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque
-		  			</p>
-		  		</div>
-		  		<a href="/" class="button is-primary is-fullrounded feature-card-cta">Primary</a>
-		  	</div>
-		    </div>
-		      <div class="feature-card advance-card-1">
-		        <div class="feature-card-poster">
-		        	<img class="feature-card-poster-img" src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-		        </div>
-		        <div class="feature-card-text">
-		    		<div class="feature-card-title">
-		    			<h1 class="feature-card-title-text">Easy to use</h1>
-		    		</div>
-
-		    		<div class="feature-card-subtitle">
-		    			<p class="feature-card-subtitle-text">
-		    				 ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque
-		    			</p>
-		    		</div>
-		    		<a href="/" class="button is-primary is-fullrounded feature-card-cta">Primary</a>
-		    	</div>
-		      </div>
-		        <div class="feature-card advance-card-1">
-		          <div class="feature-card-poster">
-		          	<img class="feature-card-poster-img" src="https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-		          </div>
-		          <div class="feature-card-text">
-		      		<div class="feature-card-title">
-		      			<h1 class="feature-card-title-text">Easy to use</h1>
-		      		</div>
-
-		      		<div class="feature-card-subtitle">
-		      			<p class="feature-card-subtitle-text">
-		      				 ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque
-		      			</p>
-		      		</div>
-		      		<a href="/" class="button is-primary is-fullrounded feature-card-cta">Primary</a>
-		      	</div>
-		        </div>
-	</section>
+  <script>
+    function handleCardClick(card) {
+      // Toggle the 'mobile-hover' class on card click
+      card.classList.toggle('mobile-hover');
+    }
+  </script>
 </body>
 </html>

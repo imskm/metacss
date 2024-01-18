@@ -7,6 +7,7 @@
     border-radius: 20px;
     transition: 0.5s;
     box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
     &:hover {
 	    height: 370px;
 	}
@@ -61,4 +62,28 @@
 .feature-card.advance-card-1 .feature-card-text .feature-card-cta {
     position: relative;
     top: 15px;
+}
+.feature-card.advance-card-1.mobile-hover {
+  height: 370px;
+}
+
+/* Adjust styles for mobile hover state */
+.feature-card.advance-card-1.mobile-hover .feature-card-poster {
+  top: -100px;
+  transform: scale(0.75);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card.advance-card-1.mobile-hover .feature-card-poster-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-card.advance-card-1.mobile-hover .feature-card-text {
+  top: 130px;
+  height: 250px;
 }

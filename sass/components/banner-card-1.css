@@ -1,0 +1,27 @@
+.banner-card-1 {
+  padding: 82px;
+  background-image: url("https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"), linear-gradient(87.17deg, #583FF2 0%, rgba(88, 63, 242, 0.5) 100%);
+  border-radius: 16px;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-card-1-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.banner-card-1-button {
+  padding: 20px 30px;
+  border-radius: 89px;
+  gap: 10px;
+  background: linear-gradient(90deg, #FF9600 0%, #FEC574 100%);
+  position: relative;
+  top: 40px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=banner-card-1.css.map */

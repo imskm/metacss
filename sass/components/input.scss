@@ -1,0 +1,31 @@
+.form {
+	display: flex;
+	gap: 32px;
+	padding: 140px 0 0 220px;
+}
+.form-field {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+.input-1 {
+	width: 400px;
+	padding:  24px;
+	border-radius: 16px;
+	border: 1px solid #E9E9E9;
+	box-shadow: 0px 4px 16px 0px #0000000D;
+	font-size: 16px;
+	font-weight: 600;
+	color: $black-003;
+}
+.label-1 {
+	font-weight: 600;
+	color: $black-004;
+}
+.form-field.bg-dark {
+	color: $black-003;
+	.input-1 {
+		background-color: #222222;
+	}
+
+}

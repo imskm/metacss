@@ -6,26 +6,33 @@
 .form-field {
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
+	gap: 12px;
 }
 .input-1 {
-	width: 400px;
-	padding:  24px;
+	padding: 24px 16px;
 	border-radius: 16px;
 	border: 1px solid #E9E9E9;
-	box-shadow: 0px 4px 16px 0px #0000000D;
+	box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.05);
 	font-size: 16px;
 	font-weight: 600;
 	color: $black-003;
+	line-height: 1;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	&:focus {
+		border: 1px solid $black-003 !important;
+		
+	}
 }
 .label-1 {
 	font-weight: 600;
 	color: $black-004;
 }
 .form-field.bg-dark {
-	color: $black-003;
-	.input-1 {
-		background-color: #222222;
+	.label-1 {
+		color: $black-003;
 	}
-
+	.input-1 {
+		background-color: $black-009;
+		border: 1px solid #2C2A2A; 
+	}
 }

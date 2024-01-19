@@ -1,0 +1,22 @@
+.banner-card-1 {
+    padding: 32px;
+    background:  linear-gradient(87.17deg, #583FF2 0%, rgba(88, 63, 242, 0.5) 100%), url('assets/img/house.jpeg'),;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    min-height: 350px;
+    .button-hero {
+        height: 60px;
+    }
+}
+
+.banner-card-1-title {
+    color: $white-color;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+}

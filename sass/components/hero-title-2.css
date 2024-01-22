@@ -1,0 +1,13 @@
+.hero-title-2 {
+  font-size: 102px;
+  font-weight: 700;
+  border: 1px solid #EDEDED;
+  background: radial-gradient(50% 50% at 50% 50%, #F8F8F8 0%, #B7B7B7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  gap: 1px;
+  text-align: center;
+  line-height: 128px;
+}
+/*# sourceMappingURL=hero-title-2.css.map */

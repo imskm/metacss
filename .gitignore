@@ -1,5 +1,6 @@
 styles.css
-.*
-!.gitignore
 temp/
 kore.pid
+
+.*
+!.gitignore

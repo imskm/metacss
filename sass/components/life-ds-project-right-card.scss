@@ -1,0 +1,41 @@
+.life-ds-project-right-card-parent {
+    background: #121111;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #2D2D2D99;
+    padding: 10px 20PX 0 20PX;
+
+}
+
+.life-ds-project-right-card {
+    height: 1200px;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background: linear-gradient(to bottom,#5604ec,#722bf6);
+    background-repeat: no-repeat;
+    border-radius: 16PX;
+}
+
+.text {
+    position: relative;
+    top: 320px;
+    left: 16px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.life-ds-project-right-card-content {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 550px;
+    height: 90px;
+    text-align: left;
+    text-align: center;
+    position: relative;
+    bottom: 320px;
+    text-align:  left ; 
+}

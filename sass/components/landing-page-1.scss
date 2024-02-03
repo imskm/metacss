@@ -1,0 +1,365 @@
+.landing-page-wrapper {
+	background: radial-gradient(50% 50% at 50% 50%, #3CDFC2 0%, #32F497 100%);
+	width: 100vw;
+	position: relative;
+	height:1421px;
+	padding: 2px 0;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+.curve-lines {
+	width: 1400px;
+	position: absolute;
+	// top: 0;
+	// right: 0;
+	bottom: 286px;
+	left: 1014px;
+	transform: rotate(214deg);
+}
+
+.landing-page-top-logos {
+	justify-content: space-between;
+}
+
+.landing-page-top-logo-img {
+	width: 95.58px;
+	height: 70px;
+	margin: 20px 0 0 140px;
+}
+
+.landing-page-top-btn {
+	width: 99px;
+	height: 46px;
+	border-radius: 40px;
+	background-color: $white-color;
+	line-height: 44px;
+	text-align: center;
+	margin: 20px 140px 0 0;
+	z-index: 1;
+
+}
+
+a {
+	text-decoration: none;
+	color:$black-color;
+}
+.svg-89 {
+	width: 150px;
+	height: 160px;
+	position: absolute;
+	top: 100px;
+	left: 400px;
+}
+
+.landing-page-text-wrapper {
+	height: 250px;
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.landing-page-title {
+	border: 1px;
+	font-size: 100px;
+	font-weight: 800;
+	line-height: 120px;
+	letter-spacing: 0em;
+}
+
+.landing-page-sub-title {
+	margin-top: 54px;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 40px;
+	letter-spacing: 0em;
+}
+
+.LP-form {
+	max-width: 760px;
+	height: 800px;
+	border-radius: 32px;
+	background: radial-gradient(50% 50% at 50% 50%, #DCFFEF 0%, #76FFC0 100%);
+	margin: 180px auto;
+	z-index: 1;
+}
+
+.landing-page-boxes {
+	width: 268px;
+	height: 168px;
+
+	flex-wrap: wrap;
+	gap: 10px;
+	position: absolute;
+	right: 634px;
+	bottom: 744px;
+}
+.box {
+	width: 96px;
+	height: 96px;
+	border-radius: 16px;
+	border: 1px solid #FFFFFF;
+	background-color: #76FFC0;
+	z-index: 1;
+}
+
+.box1{
+	width: 80px;
+	height: 80px;
+}
+
+.flight-svg {
+	width: 150px;
+	height: 150px;
+	background: radial-gradient(50% 50% at 50% 50%, #DCFFEF 0%, #76FFC0 100%);
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, -50%);
+}
+
+.is-left-svg {
+	position: relative;
+}
+
+.frame-svg {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: 18px;
+	bottom: 26px;
+}
+
+.LP-btn {
+	background: radial-gradient(100% 100% at 50% 0%, #49453B 0%, #000000 100%);
+	max-width: 624px;
+	border-radius: 16px;
+	color: $white-color;
+}
+
+.LP-cards-wrapper {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.LP-cards-svg {
+	width: 1600px;
+	margin: 32px 0px;
+	animation: move 8s linear infinite;
+
+}
+
+.sub-title {
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 57px;
+	letter-spacing: 0em;
+}
+
+.sub-title-text {
+	max-width: 600px;
+	height: 172px;
+	margin: 60px auto;
+	text-align: center;
+}
+
+.drop {
+	width: 20px;
+}
+
+.drop-link {
+	border: 1px solid;
+  	padding: 10px;
+  	border-radius: 100%;
+  	line-height: 10px;
+}
+
+.name-card-wrapper {
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px 0;
+}
+
+.name-card {
+	width: 620px;
+	height: 300px;
+	background: $white-color;
+	position: relative;
+	border-radius: 16px;
+	margin: 32px;
+}
+
+.name-card-text {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0em;
+	color: #888888;
+	width: 340px;
+	height: 120px;
+	position: absolute;
+  	right: 20px;
+  	top: 20px;
+}
+
+.heading { 
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 0em;
+	text-align: left;
+
+	margin-top: 40px;
+	width: 140px;
+	height: 30px;
+	color: #333333;
+ }
+.sub-heading {
+	width: 208px;
+	height: 24px;
+	color: #888888;
+
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 40px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.star-mark-svg {
+	position: absolute;
+	bottom: 68px;
+  	right: 46px;
+}
+
+.name-card-img {
+	width: 200px;
+	height: 220px;
+	border-radius: 16px;
+	position: absolute;
+	bottom: 160px;
+	left: 32px;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	gap:10px;
+	margin: 0 0 40px 0;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	background: #FFFFFF80;
+	border-radius: 100%;
+}
+
+.is-active-dot {
+	background: #FFFFFF;
+
+}
+
+.hiring-texts {
+	max-width: 600px;
+	height: 114px;
+	text-align: center;
+	margin: 20px auto;
+
+}
+
+.hiring-title {
+	max-width: 600px;
+	height: 114px;
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 57px;
+	letter-spacing: 0em;
+	margin: 16px;
+}
+
+.hiring-sub-title {
+	width: 653px;
+	height: 83px;
+}
+
+.is-blue {
+	color: #425FF5;
+}
+.horizontal-line {
+	width: 620px;
+	height: 1px;
+	 background: #F0F0F0;
+	 position: absolute;
+  	top: 170px;
+}
+
+.job-apply-form-wrapper {
+	width: 100%;
+	height: 848px;
+	 padding: 550px 0;
+ 	background: radial-gradient(100% 100% at 50% 0%, #464646 0%, #212121 100%);
+}
+
+
+.job-apply-form {
+	width: 1000px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 32px;
+	background-position: right;
+	object-fit: cover;
+	background-image: url("https://c.ndtvimg.com/2023-08/hg9a9nt_new-air-india-logo-650_625x300_10_August_23.jpg");
+}
+
+.job-apply-text-wrapper {
+	background: linear-gradient(89.88deg, #32F497 43%, rgba(50, 244, 151, 0) 99.89%);
+  	border-radius: 32px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+  	gap: 32px;
+}
+
+.job-apply-heading {
+	width: 340px;
+	height: 63px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.job-apply-sub-heading {
+	width: 400px;
+	height: 35px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.job-apply-btn {
+	background: radial-gradient(100% 100% at 50% 0%, #664A02 0%, #150F00 100%);
+	width: 267px;
+	height: 63px;
+	border-radius: 16px;
+	box-shadow: 0px 2px 2px 0px #F0C01580 inset;
+	box-shadow: 0px -2px 2px 0px #FFFFFF80 inset;
+}
+
+@keyframes move {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}

@@ -1,0 +1,54 @@
+.card {
+	width: 300px;
+	height: 300px;
+	background-color: transparent;
+	perspective: 1000px;
+}
+
+.flip-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-shadow: 20px 20px 40px rgba(0, 0, 0, .15);
+	transform-style: preserve-3d;
+	transition: all 500ms ease-in-out;
+}
+
+.card-face {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+
+.card-face.is-rear {
+	transform: rotateY(180deg);
+	bottom: 0;
+}
+
+.card:hover .flip-card {
+	transform: rotateY(180deg);
+}
+
+
+
+
+.card-face.is-front img {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	object-fit: cover;
+	object-position: center;
+}
+.card-face.is-rear {
+	background-color: #0046F0;
+}
+
+.card-face-wrapper {
+	padding: 20px;
+	color: #FFFFFF;
+}

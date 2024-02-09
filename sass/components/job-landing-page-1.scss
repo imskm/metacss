@@ -1,0 +1,353 @@
+
+.bg-gradient-1 {
+	background: radial-gradient(50% 50% at 50% 50%, #3CDFC2 0%, #32F497 100%);
+
+}
+
+	.title {
+		font-size: 100px;
+		font-weight: 800;
+		line-height: 125px;
+		letter-spacing: 0em;
+		text-align: center;
+		color: #000000;
+	}
+	.subtitle{
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 40px;
+		letter-spacing: 0em;
+		text-align: center;
+		color: #333333;
+		margin-top: 20px;
+	}
+
+	.login-section-1 {
+		margin-top: 80px;
+		.login-section-1-wrapper {
+			position: relative;
+			max-width: 800px;
+			overflow: visible;
+			background: radial-gradient(50% 50% at 50% 50%, #DCFFEF 0%, #76FFC0 100%);
+			margin-top: 12px;
+
+			.login-form {
+				padding: 80px;
+				gap: 20px;
+				width: 50%;
+				color: white;
+				
+			}
+			.select-1 {
+				width: 100%;
+				height: 63px;
+				top: 3025px;
+				left: 425px;
+				border-radius: 16px;
+				border: 1px;
+				color: #000000;
+				padding: 20px 16px;
+			}
+		}
+	}
+
+	.hero-button-1{
+		max-width: none;
+		background: #000000;
+	}
+
+	.circle-plane {
+		width: 150px;
+		height: 150px;
+		border-radius: 100%;
+		background: radial-gradient(#DCFFEF, #76FFC0);
+		box-shadow: 0 4px 16px rgba(33, 46, 40, 0.1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		top: 0;
+		left: 50%;
+		z-index: 9;
+		transform: translate(-50%, -50%);
+		.plane-image {
+			height: 80px;
+		}
+	}
+
+	.particle-wires {
+		position: absolute;
+		right: -50%;
+		top: -40%;
+	}
+
+	.particle-paper-plane {
+		position: absolute;
+		top: 14%;
+		left: 14%;
+	}
+
+
+
+.section-title-aviation {
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 57px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #000000;
+	width: 100%;
+	max-width: 600px;
+	.text-blue{
+		color: #425FF5
+	}
+}
+.section-subtitle-aviation  {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: center;
+	width: 100%;
+	max-width: 600px;
+	margin-top: 20px;
+
+}
+
+.section-text-wrapper-2 {
+	width: 100%;
+	max-width: 580px;
+	text-align: center;
+	margin: 0 auto;
+}
+.in-mypage{
+	padding: 16px 8px; 
+}
+
+.section-testimonial {
+	background: radial-gradient(50% 50% at 50% 50%, #3CDFC2 0%, #32F497 100%);
+}
+.section-title.my-data {
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 57px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #000000;
+	width: 100%;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+.section-landing-page-1-testimonial {
+	background: linear-gradient(89.88deg, #32F497 43%, rgba(50, 244, 151, 0) 99.89%);
+}
+
+.section-aviation-logos {
+	padding: 3.125rem 0;
+
+	.company-logo-scrollable {
+		display: flex;
+		justify-content: center;
+		gap: 2.5rem; 
+
+		.company-logo {
+			height: 9.375rem;
+			img {
+				height: 100%;
+			}
+		}
+	}
+}
+
+
+$testimonial-bg : $white-color;
+.testimonial-card-top{
+	display: flex;
+}
+.testimonial-card {
+	padding: 20px;
+	
+	&-wrapper {
+		padding: 20px;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		background-color: $testimonial-bg;
+		max-width: 600px !important;
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15); 
+		border-radius: 16px;
+		&.is-gradient {
+			background: linear-gradient(134deg, #A98BFF 0%, #6D61FF 100%), #FFF;
+		}	
+	}
+	&-avatar {
+		width: 100%;
+		max-width: 200px;
+		height: 100%;
+		max-height: 220px;
+		border-radius: 16px;
+		height: 100px;
+		transform: translateY(-52px);
+		&-img {
+			width: 100%;
+		}
+	}
+	&-text {
+		padding: 0 40px;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 1.5;
+		color: $black-003;
+		text-align: left;
+		font-family: "Poppins";
+	}
+	&-footer {
+		padding-left: 32px;
+		padding-right: 32px;
+		padding-top: 20px;
+		margin-top: 32px;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		border-top: 1px solid #F0F0F0;
+		&-left {
+			&-header {
+				font-size: 20px;
+				font-weight: 700;
+				color: $black-005;
+				line-height: 1.5;
+			}
+			&-text {
+				font-weight: 600;
+				line-height: 1.5;
+				color: $black-003;
+			}
+		}
+		&-right {
+			display: flex;
+			align-items: center;
+			&-star {
+				width: 20px;
+				fill: #FFB13D;
+			}
+		}
+	}
+	
+}
+.testimonial-section {
+	.section-text {
+		width: 100% !important;
+		max-width: 100%;
+		.section-text-wrapper {
+			margin: 0 auto;
+			text-align: center;
+			.section-title, .section-subtitle {
+				
+			}
+		}
+	}
+	.testimonial-slider {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 50px;
+		gap: 12px;
+		.testimonial-slider-wrapper {
+			width: 100%;
+			max-width: 620px;
+			padding-top: 60px;
+			display: flex;
+			justify-content: center;
+			gap: 12px;
+		}
+		.testimonial-slider-button {
+			padding: 10px;
+			border: 1px solid $black-color;
+			background-color: transparent;
+			border-radius: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			fill: $black-color;
+			transition: all .35s;
+			@include mobile {
+				padding: 5px
+			}
+			&:hover {
+				background-color: $black-color;
+				fill: $white-color !important;
+			}
+			&:active {
+				background-color: $black-color;
+				fill: $primary-001 !important;
+			}
+			.testimonial-slider-button-icon {
+				width: 24px;
+				height: 24px;
+
+			}
+		}
+	}
+}
+
+.section-banner-card {
+	.section-container {
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+		.banner-card-1{
+			background: linear-gradient(87.17deg, #32F497 0%, rgba(50, 244, 151, 0) 100%), url('https://c.ndtvimg.com/2023-08/hg9a9nt_new-air-india-logo-650_625x300_10_August_23.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+			.banner-card-1-title {
+				font-size: 32px;
+				font-weight: 700;
+				line-height: 40px;
+				letter-spacing: 0em;
+				text-align: left;
+				color: #000000;
+
+			}
+				.banner-card-1-subtitle {
+
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 24px;
+					letter-spacing: 0em;
+					text-align: left;
+					color: #555555;
+
+				}
+				.button-hero.has-shadow.is-rounded.is-lg {
+					border-radius: 16px;
+					background: radial-gradient(100% 100% at 50% 0%, #664A02 0%, #150F00 100%);
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 24px;
+					letter-spacing: 0em;
+					text-align: left;
+					color: #FFFFFF;
+
+
+				}
+
+}
+.bg-gradient-2 {
+	background: radial-gradient(100% 100% at 50% 0%, #464646 0%, #212121 100%);
+
+}
+
+.section-slim {
+	.section-wrapper {
+		padding-top: 3.125rem !important;
+		padding-bottom: 3.125rem !important;
+	}
+}

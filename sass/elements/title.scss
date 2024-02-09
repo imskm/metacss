@@ -1,0 +1,44 @@
+$section-title-size: 3rem;
+$section-title-size-tab: 2rem;
+$section-title-color: $white-color;
+
+$section-subtitle-size: 1.5rem;
+$section-subtitle-size-tab: 1.25rem;
+$section-subtitle-size-mob: 1rem;
+$section-subtitle-color: $white-color;
+
+.title {
+
+}
+
+.section-title {
+	margin: 0;
+	font-size: $section-title-size;
+	font-weight: 800;
+	color: $section-title-color;
+
+	@include tab {
+		font-size: $section-title-size-tab;
+	}
+
+}
+
+.section-subtitle {
+	font-size: $section-subtitle-size;
+	font-weight: 400;
+	color: $section-subtitle-color;
+
+	@include tab {
+		font-size: $section-subtitle-size-tab;
+	}
+
+	@include mobile {
+		font-size: $section-subtitle-size-mob;
+	}
+
+}
+
+.section-title + .section-subtitle {
+	margin-top: 1rem;
+}
+

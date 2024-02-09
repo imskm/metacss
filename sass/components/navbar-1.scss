@@ -1,11 +1,24 @@
 $navbar-height: 3.75rem;
 $item-text-size: .875rem;
-$item-text-color: $black-005;
-$item-text-hover-color: $black-003;
+$item-text-color: #222222;
+$item-text-hover-color: $black-color;
+$open-navbar-bg-color-mobile: $white-color;
 
 .navbar {
 	background-color: $black-001;
 	height: $navbar-height;
+
+	&.top {
+		position: absolute;
+		z-index: 9;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	&.bg-transparent {
+		background-color: transparent;
+	}
 
 	.navbar-wrapper, .navbar-left, .navbar-center, .navbar-right, .navbar-content, .navbar-menu {
 		display: flex;
@@ -18,6 +31,10 @@ $item-text-hover-color: $black-003;
 		max-width: $container-width;
 		margin-left: auto;
 		margin-right: auto;
+
+		.navbar-controls {
+			display: none;
+		}
 	}
 
 	&.has-three-columns {
@@ -33,10 +50,23 @@ $item-text-hover-color: $black-003;
 		}
 	}
 
+	.navbar-hamburger {
+		display: none;
+		cursor: pointer;
+		width: 3rem;
+		height: 2.25rem;
+		background-color: rgba($white-color, .7);
+		font-weight: 600;
+		border-radius: 100px;
+	}
+
 	.navbar-menu {
 		padding: 0;
 		margin: 0;
 		.navbar-menu-item {
+			display: flex;
+			align-items: center;
+			height: 2rem;
 			margin-left: 1.25rem;
 			margin-right: 1.25rem;
 			position: relative;
@@ -47,6 +77,7 @@ $item-text-hover-color: $black-003;
 				color: $item-text-color;
 				line-height: 1;
 				cursor: pointer;
+
 			}
 			&::after {
 				content: "";
@@ -54,12 +85,16 @@ $item-text-hover-color: $black-003;
 				height: 2px;
 				position: absolute;
 				left: 0;
-				bottom: -10px;
+				bottom: 0;
 				background-color: rgba($black-color, .5);
 				opacity: 0;
 				transition: all 300ms ease-in;
 			}
 			&:hover {
+				.navbar-menu-item-link {
+					color: $item-text-hover-color;
+					text-shadow: 1px 1px 1px rgba($item-text-hover-color, .2);
+				}
 				&::after {
 					opacity: 1;
 				}
@@ -162,6 +197,112 @@ $item-text-hover-color: $black-003;
 			opacity: 1;
 			visibility: visible;
 			transform: translateY(0);
+		}
+	}
+}
+
+@include tab {
+	.navbar, .navbar.top {
+		height: auto;
+		position: fixed;
+		top: 12px;
+		left: 12px;
+		right: 12px;
+		z-index: 9;
+
+		border-radius: $radius;
+
+		.navbar-wrapper {
+			display: flex;
+
+			.navbar-left {
+				width: 100%;
+				padding: 1rem;
+				.navbar-content {
+					display: flex;
+					width: 100%;
+					justify-content: space-between;
+				}
+			}
+			.navbar-center, .navbar-right {
+				display: none;
+			}
+		}
+
+		.navbar-hamburger {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&.is-open {
+			box-shadow: 10px 10px 20px rgba($black-color, .15);
+			animation: fade-scale 300ms ease-out alternate;
+			background-color: $open-navbar-bg-color-mobile;
+
+			.navbar-wrapper {
+				display: block;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+
+				.navbar-left {
+					display: none;
+				}
+				.navbar-center {
+					display: block;
+					.navbar-content {
+						display: block;
+						width: 100%;
+						.navbar-menu {
+							display: block;
+						}
+					}
+				}
+				.navbar-right {
+					display: block;
+					.navbar-content {
+						display: block;
+						width: 100%;
+						.navbar-menu {
+							display: block;
+						}
+					}
+				}
+
+				.navbar-controls {
+					display: block;
+					margin-bottom: 1rem;
+					&-wrapper {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 0 1.25rem;
+
+						.navbar-brand img {
+							height: 2rem;
+						}
+
+						.navbar-toggler {
+							@include button-reset;
+							padding: 8px;
+							background-color: transparent;
+							color: $black-003;
+							font-size: 1.25rem;
+						}
+					}
+				}
+
+				.navbar-menu {
+					&-item {
+						display: flex;
+						align-items: center;
+
+						&-link {
+							font-weight: 600;
+						}
+					}
+				}
+			}
 		}
 	}
 }

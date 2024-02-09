@@ -1,0 +1,45 @@
+.tag {
+	display: inline-flex;
+	font-size: 12px;
+	padding: 4px 8px;
+	background-color: $black-001;
+	color: $black-005;
+	border-radius: 4px;
+}
+
+.tag.is-white{
+	background-color:  $white-color;
+	color: $black-color;
+}
+.tag.is-black {
+	background-color: $black-005;
+	color: $white-color;
+}
+.tag.is-dark-black {
+	background-color: $black-color;
+	color: $white-color;
+}
+.tag.is-primary {
+	background-color: $green-004;
+	color: $white-color;
+}
+.tag.is-link {
+	background-color: $blue-006;
+	color: $white-color;
+}
+.tag.is-info {
+	background-color: $blue-010;
+	color: $white-color;
+}
+.tag.is-success{
+	background-color: $green-007;
+	color: $white-color;
+}
+.tag.is-warning {
+	background-color: $orange-004;
+	color: $black-005;
+}
+.tag.is-danger {
+	background-color: $red-005;
+	color: $white-color;
+}

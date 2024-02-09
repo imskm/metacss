@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Navbar 1</title>
 <link rel="stylesheet" href="../../styles.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
 
+<!-- <nav class="navbar has-three-columns bg-transparent top"> -->
 <nav class="navbar has-three-columns">
 	<div class="navbar-wrapper">
 		<div class="navbar-left">
@@ -15,6 +17,19 @@
 				<div class="navbar-brand">
 					<img src="../../assets/img/logo.png" alt="Framework logo">
 				</div>
+				<div class="navbar-hamburger" role="button">
+					<div id=""><i class="ri-menu-2-line"></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar-controls">
+			<div class="navbar-controls-wrapper">
+				<div class="navbar-brand">
+					<img src="../../assets/img/logo.png" alt="Framework logo">
+				</div>
+				<button class="navbar-toggler" type="button">
+					<div id="menuToggler"><i class="ri-close-line"></i></div>
+				</button>
 			</div>
 		</div>
 		<div class="navbar-center">
@@ -25,151 +40,9 @@
 					</li>
 					<li class="navbar-menu-item has-dropdown">
 						<a href="#" class="navbar-menu-item-link">MEN</a>
-						<nav class="navsubmenu dropdown">
-							<div class="navsubmenu-content">
-								<div class="container">
-									<div class="navsubmenu-wrapper">
-										<div class="navsubmenu-menu-wrapper">
-											<div class="navsubmenu-menu-column">
-												<ul class="navsubmenu-menu">
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link is-heading">Topwear</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Shirt</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">T-Shirt</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Trouser</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Casual</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Formal</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Beach</a>
-													</li>
-												</ul>
-											</div>
-											<div class="navsubmenu-menu-column">
-												<ul class="navsubmenu-menu">
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link is-heading">Topwear</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Shirt</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">T-Shirt</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Trouser</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Casual</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Formal</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Beach</a>
-													</li>
-												</ul>
-											</div>
-											<div class="navsubmenu-menu-column">
-												<ul class="navsubmenu-menu">
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link is-heading">Topwear</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Shirt</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">T-Shirt</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Trouser</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Casual</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Formal</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Beach</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="navsubmenu-cover-img">
-											<div class="navsubmenu-conver-img-content">
-												<figure class="navsubmenu-cover-img-head">
-													<img class="navsubmenu-img" src="../../assets/img/fashion-1.jpg">
-													<figcaption class="navsubmenu-cover-img-text">
-														<div class="navsubmenu-cover-img-title">MEN</div>
-														<div class="navsubmenu-cover-img-subtitle">COLLECTION</div>
-													</figcaption>
-												</figure>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</nav>
 					</li>
 					<li class="navbar-menu-item has-dropdown">
 						<a href="#" class="navbar-menu-item-link">WOMEN</a>
-						<nav class="navsubmenu dropdown">
-							<div class="navsubmenu-content">
-								<div class="container">
-									<div class="navsubmenu-wrapper">
-										<div class="navsubmenu-menu-wrapper">
-											<div class="navsubmenu-menu-column">
-												<ul class="navsubmenu-menu">
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link is-heading">Topwear</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Shirt</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">T-Shirt</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Trouser</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Casual</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Formal</a>
-													</li>
-													<li class="navsubmenu-menu-item">
-														<a href="#" class="navsubmenu-menu-item-link">Beach</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="navsubmenu-cover-img">
-											<div class="navsubmenu-conver-img-content">
-												<figure class="navsubmenu-cover-img-head">
-													<img class="navsubmenu-img" src="../../assets/img/fashion-2.jpg">
-													<figcaption class="navsubmenu-cover-img-text">
-														<div class="navsubmenu-cover-img-title">WOMEN</div>
-														<div class="navsubmenu-cover-img-subtitle">COLLECTION</div>
-													</figcaption>
-												</figure>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</nav>
 					</li>
 				</ul>
 			</div>
@@ -242,6 +115,16 @@
 	</div>
 </nav>
 -->
+
+<script>
+document.querySelector(".navbar-hamburger").addEventListener("click", (e) => {
+	document.querySelector(".navbar").classList.toggle("is-open");
+});
+
+document.querySelector(".navbar-toggler").addEventListener("click", (e) => {
+	document.querySelector(".navbar").classList.toggle("is-open");
+});
+</script>
 
 </body>
 </html>

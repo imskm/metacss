@@ -1,0 +1,66 @@
+.section.card-section {
+	.section-wrapper {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		.team-card-title {
+			padding: 40px;
+			.team-card-title-name {
+				color: black;
+				font-size: 48px;
+				font-weight: 700;
+			}
+		}
+		.team-cards {
+			width: 100%;
+			padding: 20px;
+			.team-cards-wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.about-card {
+					width: 100%;
+					max-width: 550px;
+					padding: 20px;
+					margin-bottom: 40px;
+					.about-card-wrapper {
+						display: flex;
+						.about-card-image {
+							width: 200px;
+							height: 200px;
+							background-color: $black-003;
+						}
+						.about-card-texts {
+							padding: 0 20px;
+							.about-card-texts-header {
+								margin-bottom: 16px;
+								.about-card-title {
+									font-size: 20px;
+									font-weight: 600;
+								}
+								.about-card-subtitle-1 {
+									color: #5549FF;
+								}
+							}
+							.about-card-texts-fotter {
+								.about-card-subtitle-2 {
+									color: $black-003;
+									.icon {
+										margin-right: 16px;
+									}
+								}
+							}
+						}
+					}
+				}
+				.for-flex {
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					width: 100%;
+				}
+			}
+			
+		}
+	}
+}

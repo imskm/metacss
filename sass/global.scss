@@ -20,3 +20,94 @@ padding: 200px;
 .event-none {
 	pointer-events: none;
 }
+
+.width-full {
+	width: 100vw;
+}
+.height-full {
+	height: 100vh;
+}
+
+
+// @TODO Cleanup
+.shadow-001 {
+	box-shadow: 0 5px 10px rgba($black-color, .2);
+}
+
+.list {
+	position: relative;
+
+	&-item {
+		margin: .25rem 0;
+	}
+}
+
+@include tab {
+	.section-title, .section-subtitle {
+		text-align: left;
+	}
+}
+
+@include tab {
+	.jplive-footer-section {
+		.footer-section {
+			&-logo {
+				height: 2rem;
+				margin-bottom: 1rem;
+			}
+
+			&-brand-title {
+				font-size: 1.25rem;
+			}
+
+			&-copyright-container {
+
+				.footer-section-copyright {
+					margin-top: 1.5rem;
+				}
+			}
+
+			.list-section {
+				.list {
+					.list-item {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mobile {
+	.jplive-footer-section {
+		.footer-section {
+			grid-template-columns: repeat(2, 1fr);
+			grid-row-gap: 2rem;
+
+			&-logo {
+				height: 2rem;
+				margin-bottom: 1rem;
+			}
+
+			&-brand-title {
+				font-size: 1.25rem;
+			}
+
+			&-copyright-container {
+				grid-area: auto/span 2;
+
+				.footer-section-copyright {
+					margin-top: 1.5rem;
+				}
+			}
+
+			.list-section {
+				.list {
+					.list-item {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}

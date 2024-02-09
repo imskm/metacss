@@ -1,0 +1,15 @@
+.hero-button-1 {
+    max-width: 500px;
+    padding: 24px;
+    border-radius: 16px;
+    background: radial-gradient(100% 100% at 50% 0%, #FF5353 0%, #FF001C 100%);
+    box-shadow: 0px 2px 2px 0px rgba(240, 192, 21, 0.15) inset, 0px -2px 2px 0px rgba(255, 255, 255, 0.15) inset;
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-weight: 600;
+}

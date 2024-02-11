@@ -1,167 +1,353 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LANDING PAGE</title>
-<link rel="stylesheet" type="text/css" href="/styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LANDING PAGE</title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
-<section class="landing-page-section">
-	<div class="landing-page-container">
-		<div class="landing-page-wrapper">
-			<img class="curve-lines" src="../../assets/img/curve-lines.svg">
-			<div class="landing-page-top-logos flex">
-				<div class="landing-page-top-logo">
-					<img class="landing-page-top-logo-img" src="https://www.figma.com/file/j8Si2510EsjsQnqSBgiC4I/image/ab877c7247516f9105427ea901e8b70a956bd3a5">
-				</div>
 
-				<div class="landing-page-top-btn">
-					<a href="#">Call</a>
+<nav class="navbar has-three-columns landing-page-nav">
+	<div class="navbar-wrapper">
+		<div class="navbar-left">
+			<div class="navbar-content">
+				<div class="navbar-brand">
+					<img class="landing-page-logo-img" src="../../assets/img/lp-logo.png" alt="Framework logo">
+				</div>
+				<div class="navbar-hamburger" role="button">
+					<!-- <div id=""><i class="ri-menu-2-line"></i></div> -->
 				</div>
 			</div>
-			<img class="svg-89" src="../../assets/img/Group89.svg">
-
-			<div class="landing-page-text-wrapper">
-				<h1 class="landing-page-title">Exciting<br> New Opportunity</h1>
-
-				<h2 class="landing-page-sub-title">Join the Aviation Industry Today
-				</h2>
-			</div>
-			<div class="login-form LP-form">
-				<div class="landing-page-boxes flex">
-					<div class="box box1"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-					<div class="box"></div>
-				</div>
-
-				<img class="flight-svg" src="../../assets/img/flight.svg">
-				<div class="form-field">
-					<label class="label-1" for="email">Your Full Name</label>
-					<input class="input-1" type="text" name="name" id="name" placeholder="Your Full Name">
-				</div>
-
-				<div class="form-field">
-					<label class="label-1" for="phn-number">Your Mobile Number</label> 
-					<input class="input-1" type="text" name="phn-number" id="phn-number" placeholder="e.g 9000001101">
-				</div>
-
-				<div class="form-field is-left-svg">
-					<label class="label-1" for="select-job">Select job from the list</label>
-					<input class="input-1" type="text" name="select-job" id="select-job" placeholder="Select Job">
-					<img class="frame-svg" src="../../assets/img/Frame.svg">
-				</div>
-
-				<div class="form-field is-left-svg">
-					<label class="label-1" for="work">Where do you want to work?</label>
-					<input class="input-1" type="text" name="work" id="work" placeholder="Select state">
-					<img class="frame-svg" src="../../assets/img/Frame.svg">
-				</div>
-				<div class="form-field">
-					<a class="hero-button-1 LP-btn" href="#">SUBMIT</a>
-				</div>
-			</div>			
 		</div>
-		
-		<section class="LP-cards-wrapper">
-			<img class="LP-cards-svg" src="../../assets/img/Frame66.jpg">
-			<img class="LP-cards-svg" src="../../assets/img/Frame66.jpg">
-			<img class="LP-cards-svg" src="../../assets/img/Frame66.jpg">
-			<img class="LP-cards-svg" src="../../assets/img/Frame66.jpg">
-		</section>
-
-		<section class="landing-page-wrapper">
-			<div class="sub-title-text">
-				<p class="sub-title">
-					Our candidates who got excellent position though our company
-				</p>
-			</div>
-
-			<div class="name-card-wrapper flex">
-				<a class="drop-link" href="#">
-					<svg class="drop"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
-				</a>
-
-				<div class="name-card">
-					
-					<p class="name-card-text flex">
-						Thanks to P. Devi Aviation, I thrive in ground handling, tackling challenges and fostering teamwork daily. Grateful for the support, I'm proud to contribute to aviation's success.
-					</p>
-					
-					<div class="horizontal-line"></div>
-					<div class="name-card-img">
-						<img class="card-man-svg" src="../../assets/img/card-man.png">
-						<h1 class="heading">Deepak Shaw</h1>
-						<h2 class="sub-heading">Ground Handling Position</h2>
-					</div>
-					<img class="star-mark-svg" src="../../assets/img/star-mark.svg">
+		<div class="navbar-controls">
+			<div class="navbar-controls-wrapper">
+				<div class="navbar-brand">
+					<!-- <img src="../../assets/img/logo.png" alt="Framework logo"> -->
 				</div>
+				<button class="navbar-toggler" type="button">
+					<!-- <div id="menuToggler"><i class="ri-close-line"></i></div> -->
+				</button>
+			</div>
+		</div>
+		<div class="navbar-right">
+			<div class="navbar-content">
+				<ul class="navbar-menu">
+					<!-- Button html here -->
+					<li class="nav-btn-li">
+						<a class="nav-btn" href="#">Call</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
 
-				<a class="drop-link" href="#">
-					<svg  class="drop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
-				</a>
-			</div>
-			<div class="dots">
-				<div class="dot is-active-dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-			</div>
-			<div class="hiring-texts">
-				<h1 class="hiring-title">
-					Land your foot on aviation industry now, <span class="is-blue">we are hiring!</span>
+<section class="section landing-page-1">
+	<div class="curve-particles-wrapper">
+		<img class="curve-particles-svg" src="../../assets/img/curve-lines.svg">
+	</div>
+	<div class="container">
+		<div class="wrapper" style="padding:100px 0;">
+			<div class="texts-wrapper">
+				<h1 class="hero-title-2 is-black">
+					Exciting<br>New Opportunity
+					<img class="particle-2" src="../../assets/img/Group89.svg">
 				</h1>
-				<p class="hiring-sub-title">
-					In the past, we've provided numerous candidates with excellent opportunities for lucrative positions. Now, the aviation industry seeks candidates for vacant roles. Don't delay; secure your place by filling out the form below. Applications are processed on a first-come, first-served basis.
-				</p>
+				<h2 class="sub-title">Join the Aviation Industry Today</h2>
 			</div>
 
-			<div class="login-form LP-form">
+			<div class="login-form landing-page-form">
+				<div class="login-form-logo">
+					<img class="login-form-svg" src="../../assets/img/flight.svg">
+				</div>
+
+				<div class="box-particles">
+					<div class="left-box">
+						<div class="box small"></div>
+						<div class="box"></div>
+					</div>
+					<div class="right-box">
+						<div class="box"></div>
+						<div class="box"></div>
+					</div>
+				</div>
 
 				<div class="form-field">
-					<label class="label-1" for="email">Your Full Name</label>
+					<label class="label-1" for="full-name">Your Full Name</label>
 					<input class="input-1" type="text" name="name" id="name" placeholder="Your Full Name">
 				</div>
 
-				<div class="form-field">
-					<label class="label-1" for="phn-number">Your Mobile Number</label> 
+				<div class="form-field ">
+					<label class="label-1" for="phn-number">Your Phone Number</label> 
 					<input class="input-1" type="text" name="phn-number" id="phn-number" placeholder="e.g 9000001101">
 				</div>
 
-				<div class="form-field is-left-svg">
-					<label class="label-1" for="select-job">Select job from the list</label>
-					<input class="input-1" type="text" name="select-job" id="select-job" placeholder="Select Job">
-					<img class="frame-svg" src="../../assets/img/Frame.svg">
-				</div>
-
-				<div class="form-field is-left-svg">
-					<label class="label-1" for="work">Where do you want to work?</label>
-					<input class="input-1" type="text" name="work" id="work" placeholder="Select state">
-					<img class="frame-svg" src="../../assets/img/Frame.svg">
+				<div class="form-field">
+					<label class="label-1" for="job">Select job from the list</label>
+					<select class="input-1 bg-white" name="job" id="job" required="">
+						<option selected="" disabled="">Select job</option>
+						<option value="Cabin Crew">Cabin Crew</option>
+						<option value="Airlines (CSA)">Airlines (CSA)</option>
+						<option value="Ground Handling">Ground Handling</option>
+						<option value="Retail (CSA)">Retail (CSA)</option>
+						<option value="Tag Boy">Tag Boy</option>
+						<option value="Cargo">Cargo</option>
+					</select>
 				</div>
 				<div class="form-field">
-					<a class="hero-button-1 LP-btn" href="#">SUBMIT</a>
-				</div>
-			</div>
-		</section>
+					<label class="label-1" for="work_address">Where do you want to work?</label>
+					<select class="input-1 bg-white" name="work_address" id="work_address" required="">
+						<option selected="" disabled="">Select state</option>
+						<option value="andhra_pradesh">Andhra Pradesh</option>
+						<option value="andaman_and_nicobar_islands">Andaman and Nicobar Islands</option>
+						<option value="arunachal_pradesh">Arunachal Pradesh</option>
+						<option value="assam">Assam</option>
+						<option value="bihar">Bihar</option>
+						<option value="chandigarh">Chandigarh</option>
+						<option value="chhattisgarh">Chhattisgarh</option>
+						<option value="dadar_and_nagar_haveli">Dadar and Nagar Haveli</option>
+						<option value="daman_and_diu">Daman and Diu</option>
+						<option value="delhi">Delhi</option>
+						<option value="goa">Goa</option>
+						<option value="gujarat">Gujarat</option>
+						<option value="haryana">Haryana</option>
+						<option value="himachal_pradesh">Himachal Pradesh</option>
+						<option value="jammu_and_kashmir">Jammu and Kashmir</option>
+						<option value="jharkhand">Jharkhand</option>
+						<option value="karnataka">Karnataka</option>
+						<option value="kerala">Kerala</option>
+						<option value="lakshadweep">Lakshadweep</option>
+						<option value="madhya_pradesh">Madhya Pradesh</option>
+						<option value="maharashtra">Maharashtra</option>
+						<option value="manipur">Manipur</option>
+						<option value="meghalaya">Meghalaya</option>
+						<option value="mizoram">Mizoram</option>
+						<option value="nagaland">Nagaland</option>
+						<option value="odisha">Odisha</option>
+						<option value="puducherry">Puducherry</option>
+						<option value="punjab">Punjab</option>
+						<option value="rajasthan">Rajasthan</option>
+						<option value="sikkim">Sikkim</option>
+						<option value="tamil_nadu">Tamil Nadu</option>
+						<option value="telangana">Telangana</option>
+						<option value="tripura">Tripura</option>
+						<option value="uttar_pradesh">Uttar Pradesh</option>
+						<option value="uttarakhand">Uttarakhand</option>
+						<option value="west_bengal">West Bengal</option>
+					</select>
+				</div>			
 
-		<div class="job-apply-form-wrapper">
-			<div class="job-apply-form">
-				<div class="job-apply-text-wrapper">
-					<h1 class="job-apply-heading">
-						Want to get job in Aviation Industry?						
-					</h1>
-					<p class="job-apply-sub-heading">
-						We have good number of available positions to get you your dream job. 
-					</p>
-					<a class="hero-button-1 job-apply-btn" href="#">APPLY NOW</a>
+				<div class="form-field">
+					<a class="hero-button-1 is-width is-black" href="#">SUBMIT</a>
 				</div>
-				
 			</div>
 		</div>
-
 	</div>
 </section>
+
+<section class="landing-page-brand-logo">
+	<div class="brand-wrapper">
+		<div class="brand-logo">
+			<img class="brand-logo-img" src="../../assets/img/image 1.png">
+		</div>
+		<div class="brand-logo">
+			<img class="brand-logo-img" src="../../assets/img/image 2.png">
+		</div>
+		<div class="brand-logo">
+			<img class="brand-logo-img" src="../../assets/img/image 3.png">
+		</div>
+		<div class="brand-logo">
+			<img class="brand-logo-img" src="../../assets/img/image 4.png">
+		</div>
+		<div class="brand-logo">
+			<img class="brand-logo-img" src="../../assets/img/image 5.png">
+		</div>
+		<div class="brand-logo">
+			<img class="brand-logo-img" src="../../assets/img/image 6.png">
+		</div>
+	</div>
+</section>
+
+<section class="section testimonial-section landing-page-1">
+	<div class="container">
+		<div class="section-wrapper">
+			<div class="section-text">
+				<div class="section-text-wrapper">
+					<h1 class="section-title is-black" data-myslideup="slidein-1" data-animation-done="true">
+						Our candidates who got excellent position though our company
+					</h1>
+				</div>
+			</div>
+
+			<div class="testimonial-slider" data-myslideup="slidein-1" data-animation-done="true">
+				<div class="testimonial-slider-wrapper" data-myslides="slider-1" style="display: flex; overflow: hidden;">
+					<div class="testimonial-card" style="min-width: 620px;" data-slide-position="0">
+						<div class="testimonial-card-wrapper">
+							<div class="testimonial-modifier">
+								<div class="testimonial-card-avatar">
+									<img src="../../assets/img/card-candidate.png">
+								</div>
+								<div class="testimonial-card-text">
+									<p class="sub-title">
+										Thanks to P. Devi Aviation, I thrive in ground handling, tackling challenges and fostering teamwork daily. Grateful for the support, I'm proud to contribute to aviation's success.
+									</p>
+								</div>
+							</div>
+							<div class="testimonial-card-footer">
+								<div class="testimonial-card-footer-left">
+									<h1 class="testimonial-card-footer-left-header">Deepak Shaw</h1>
+									<span class="testimonial-card-footer-left-text">Ground Handling Position</span>
+								</div>
+								<div class="testimonial-card-footer-right">
+									<div class="testimonial-card-footer-right-star">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0008 17L6.12295 20.5902L7.72105 13.8906L2.49023 9.40983L9.35577 8.85942L12.0008 2.5L14.6458 8.85942L21.5114 9.40983L16.2806 13.8906L17.8787 20.5902L12.0008 17Z"></path></svg>
+									</div>
+									<div class="testimonial-card-footer-right-star">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0008 17L6.12295 20.5902L7.72105 13.8906L2.49023 9.40983L9.35577 8.85942L12.0008 2.5L14.6458 8.85942L21.5114 9.40983L16.2806 13.8906L17.8787 20.5902L12.0008 17Z"></path></svg>
+									</div>
+									<div class="testimonial-card-footer-right-star">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0008 17L6.12295 20.5902L7.72105 13.8906L2.49023 9.40983L9.35577 8.85942L12.0008 2.5L14.6458 8.85942L21.5114 9.40983L16.2806 13.8906L17.8787 20.5902L12.0008 17Z"></path></svg>
+									</div>
+									<div class="testimonial-card-footer-right-star">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0008 17L6.12295 20.5902L7.72105 13.8906L2.49023 9.40983L9.35577 8.85942L12.0008 2.5L14.6458 8.85942L21.5114 9.40983L16.2806 13.8906L17.8787 20.5902L12.0008 17Z"></path></svg>
+									</div>
+									<div class="testimonial-card-footer-right-star">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0008 14.6564L14.8175 16.3769L14.0517 13.1664L16.5583 11.0192L13.2683 10.7554L12.0008 7.70792V14.6564ZM12.0008 17L6.12295 20.5902L7.72105 13.8906L2.49023 9.40983L9.35577 8.85942L12.0008 2.5L14.6458 8.85942L21.5114 9.40983L16.2806 13.8906L17.8787 20.5902L12.0008 17Z"></path></svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="testimonial-slider-circles">
+				<div class="testimonial-slider-circle is-active"></div>
+				<div class="testimonial-slider-circle"></div>
+				<div class="testimonial-slider-circle"></div>
+				<div class="testimonial-slider-circle"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section landing-page-1">
+	<div class="container">
+		<div class="wrapper">
+			<div class="section-text">
+				<div class="section-text-wrapper">
+					<h2 class="section-title is-black" data-myslideup="slidein-1">
+						Land your foot on aviation industry now, <span class="is-blue">we are hiring!</span>
+					</h2>
+
+					<h2 class="section-subtitle is-black" data-myslideup="slidein-1">
+						In the past, we've provided numerous candidates with excellent opportunities for lucrative positions. Now, the aviation industry seeks candidates for vacant roles. Don't delay; secure your place by filling out the form below. Applications are processed on a first-come, first-served basis.
+					</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section bg-gradient">
+	<div class="gradient-mask"></div>
+	<div class="container">
+		<div class="wrapper">
+			<div class="login-form landing-page-form">
+				<div class="form-field">
+					<label class="label-1" for="full-name">Your Full Name</label>
+					<input class="input-1" type="text" name="name" id="name" placeholder="Your Full Name">
+				</div>
+
+				<div class="form-field ">
+					<label class="label-1" for="phn-number">Your Phone Number</label> 
+					<input class="input-1" type="text" name="phn-number" id="phn-number" placeholder="e.g 9000001101">
+				</div>
+
+				<div class="form-field">
+					<label class="label-1" for="job">Select job from the list</label>
+					<select class="input-1 bg-white" name="job" id="job" required="">
+						<option selected="" disabled="">Select job</option>
+						<option value="Cabin Crew">Cabin Crew</option>
+						<option value="Airlines (CSA)">Airlines (CSA)</option>
+						<option value="Ground Handling">Ground Handling</option>
+						<option value="Retail (CSA)">Retail (CSA)</option>
+						<option value="Tag Boy">Tag Boy</option>
+						<option value="Cargo">Cargo</option>
+					</select>
+				</div>
+				<div class="form-field">
+					<label class="label-1" for="work_address">Where do you want to work?</label>
+					<select class="input-1 bg-white" name="work_address" id="work_address" required="">
+						<option selected="" disabled="">Select state</option>
+						<option value="andhra_pradesh">Andhra Pradesh</option>
+						<option value="andaman_and_nicobar_islands">Andaman and Nicobar Islands</option>
+						<option value="arunachal_pradesh">Arunachal Pradesh</option>
+						<option value="assam">Assam</option>
+						<option value="bihar">Bihar</option>
+						<option value="chandigarh">Chandigarh</option>
+						<option value="chhattisgarh">Chhattisgarh</option>
+						<option value="dadar_and_nagar_haveli">Dadar and Nagar Haveli</option>
+						<option value="daman_and_diu">Daman and Diu</option>
+						<option value="delhi">Delhi</option>
+						<option value="goa">Goa</option>
+						<option value="gujarat">Gujarat</option>
+						<option value="haryana">Haryana</option>
+						<option value="himachal_pradesh">Himachal Pradesh</option>
+						<option value="jammu_and_kashmir">Jammu and Kashmir</option>
+						<option value="jharkhand">Jharkhand</option>
+						<option value="karnataka">Karnataka</option>
+						<option value="kerala">Kerala</option>
+						<option value="lakshadweep">Lakshadweep</option>
+						<option value="madhya_pradesh">Madhya Pradesh</option>
+						<option value="maharashtra">Maharashtra</option>
+						<option value="manipur">Manipur</option>
+						<option value="meghalaya">Meghalaya</option>
+						<option value="mizoram">Mizoram</option>
+						<option value="nagaland">Nagaland</option>
+						<option value="odisha">Odisha</option>
+						<option value="puducherry">Puducherry</option>
+						<option value="punjab">Punjab</option>
+						<option value="rajasthan">Rajasthan</option>
+						<option value="sikkim">Sikkim</option>
+						<option value="tamil_nadu">Tamil Nadu</option>
+						<option value="telangana">Telangana</option>
+						<option value="tripura">Tripura</option>
+						<option value="uttar_pradesh">Uttar Pradesh</option>
+						<option value="uttarakhand">Uttarakhand</option>
+						<option value="west_bengal">West Bengal</option>
+					</select>
+				</div>			
+
+				<div class="form-field">
+					<a class="hero-button-1 is-width is-black" href="#">SUBMIT</a>
+				</div>
+			</div>
+			
+
+			<div class="section-mask">
+				<div class="section-wrapper">
+					<div class="banner-card-1">
+						<div class="banner-card-texts">
+							<h1 class="banner-card-1-title banner-card-title">
+								Want to get job in Aviation Industry?
+							</h1>
+							<p class="card-subtitle">
+								We have good number of available positions to get you your dream job. 
+							</p>
+							<div>
+								<button class="hero-button-1 card-btn">
+									Apply Now
+								</button>
+							</div>
+						</div> 
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 </body>
 </html>

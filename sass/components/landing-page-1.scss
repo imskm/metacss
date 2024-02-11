@@ -1,365 +1,476 @@
-.landing-page-wrapper {
+
+.landing-page-1 {
 	background: radial-gradient(50% 50% at 50% 50%, #3CDFC2 0%, #32F497 100%);
-	width: 100vw;
 	position: relative;
-	height:1421px;
-	padding: 2px 0;
-}
+	min-height: 100%;
+	overflow: hidden;
 
-.flex {
-	display: flex;
-	align-items: center;
-}
-.curve-lines {
-	width: 1400px;
-	position: absolute;
-	// top: 0;
-	// right: 0;
-	bottom: 286px;
-	left: 1014px;
-	transform: rotate(214deg);
-}
+//   .curve-particles-svg {
+//   	// min-width: 80%;
+// 	//   min-height: 80%;
+//     position: absolute;
+//     // right: -27%;
+//     // top: -68%;
+//     left: 56%;
+//   bottom: 20%;
+// }
 
-.landing-page-top-logos {
-	justify-content: space-between;
+	// .curve-particles-svg {
+	// 	position: absolute;
+	// 	top: -35%;
+	// 	right: -30%;
+	// 	max-width: 70%;
+	// 	overflow: hidden;
+	// 	// .curve-particles-svg {
+	// 	// 	width: 100%;
+	// 	// 	height: 100%;
+	// 	// }
+	// }
+
+	.curve-particles-wrapper {
+		width: 100%;
+		min-height: 80%;
+		position: absolute;
+	}
+
+	.curve-particles-svg {
+		overflow: hidden;
+		position: absolute;
+		right: -28%;
+		top: -44%;
+	}
 }
-
-.landing-page-top-logo-img {
-	width: 95.58px;
-	height: 70px;
-	margin: 20px 0 0 140px;
-}
-
-.landing-page-top-btn {
-	width: 99px;
-	height: 46px;
-	border-radius: 40px;
-	background-color: $white-color;
-	line-height: 44px;
-	text-align: center;
-	margin: 20px 140px 0 0;
-	z-index: 1;
-
-}
-
-a {
-	text-decoration: none;
-	color:$black-color;
-}
-.svg-89 {
-	width: 150px;
-	height: 160px;
-	position: absolute;
-	top: 100px;
-	left: 400px;
-}
-
-.landing-page-text-wrapper {
-	height: 250px;
-	max-width: 900px;
-	margin: 0 auto;
-	text-align: center;
-	position: relative;
-}
-
-.landing-page-title {
-	border: 1px;
-	font-size: 100px;
-	font-weight: 800;
-	line-height: 120px;
-	letter-spacing: 0em;
-}
-
-.landing-page-sub-title {
-	margin-top: 54px;
-	font-size: 32px;
-	font-weight: 600;
-	line-height: 40px;
-	letter-spacing: 0em;
-}
-
-.LP-form {
-	max-width: 760px;
-	height: 800px;
-	border-radius: 32px;
-	background: radial-gradient(50% 50% at 50% 50%, #DCFFEF 0%, #76FFC0 100%);
-	margin: 180px auto;
-	z-index: 1;
-}
-
-.landing-page-boxes {
-	width: 268px;
-	height: 168px;
-
-	flex-wrap: wrap;
-	gap: 10px;
-	position: absolute;
-	right: 634px;
-	bottom: 744px;
-}
-.box {
-	width: 96px;
-	height: 96px;
-	border-radius: 16px;
-	border: 1px solid #FFFFFF;
-	background-color: #76FFC0;
-	z-index: 1;
-}
-
-.box1{
-	width: 80px;
-	height: 80px;
-}
-
-.flight-svg {
-	width: 150px;
-	height: 150px;
-	background: radial-gradient(50% 50% at 50% 50%, #DCFFEF 0%, #76FFC0 100%);
-	border-radius: 100%;
-	position: absolute;
-	left: 50%;
-	top: 0;
-	transform: translate(-50%, -50%);
-}
-
-.is-left-svg {
-	position: relative;
-}
-
-.frame-svg {
-	width: 24px;
-	height: 24px;
-	position: absolute;
-	right: 18px;
-	bottom: 26px;
-}
-
-.LP-btn {
-	background: radial-gradient(100% 100% at 50% 0%, #49453B 0%, #000000 100%);
-	max-width: 624px;
-	border-radius: 16px;
-	color: $white-color;
-}
-
-.LP-cards-wrapper {
-	display: inline-block;
-	white-space: nowrap;
-}
-
-.LP-cards-svg {
-	width: 1600px;
-	margin: 32px 0px;
-	animation: move 8s linear infinite;
-
-}
-
-.sub-title {
-	font-size: 38px;
-	font-weight: 700;
-	line-height: 57px;
-	letter-spacing: 0em;
-}
-
-.sub-title-text {
-	max-width: 600px;
-	height: 172px;
-	margin: 60px auto;
-	text-align: center;
-}
-
-.drop {
-	width: 20px;
-}
-
-.drop-link {
-	border: 1px solid;
-  	padding: 10px;
-  	border-radius: 100%;
-  	line-height: 10px;
-}
-
-.name-card-wrapper {
+.navbar-wrapper {
+	max-width: 1400px;
 	justify-content: space-around;
-	align-items: center;
-	padding: 30px 0;
+	.call-btn {
+		width: 33px;
+		height: 24px;
+		background-color: #FFFFFF;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 24px;
+		letter-spacing: 0em;
+		text-align: center;
+		border-radius: 40px;
+	}
 }
 
-.name-card {
-	width: 620px;
-	height: 300px;
-	background: $white-color;
-	position: relative;
-	border-radius: 16px;
-	margin: 32px;
-}
-
-.name-card-text {
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 24px;
-	letter-spacing: 0em;
-	color: #888888;
-	width: 340px;
-	height: 120px;
-	position: absolute;
-  	right: 20px;
-  	top: 20px;
-}
-
-.heading { 
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 30px;
-	letter-spacing: 0em;
-	text-align: left;
-
-	margin-top: 40px;
-	width: 140px;
-	height: 30px;
-	color: #333333;
- }
-.sub-heading {
-	width: 208px;
-	height: 24px;
-	color: #888888;
-
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 40px;
-	letter-spacing: 0em;
-	text-align: left;
-}
-
-.star-mark-svg {
-	position: absolute;
-	bottom: 68px;
-  	right: 46px;
-}
-
-.name-card-img {
-	width: 200px;
-	height: 220px;
-	border-radius: 16px;
-	position: absolute;
-	bottom: 160px;
-	left: 32px;
-}
-
-.dots {
-	display: flex;
-	justify-content: center;
-	gap:10px;
-	margin: 0 0 40px 0;
-}
-
-.dot {
-	width: 10px;
-	height: 10px;
-	background: #FFFFFF80;
-	border-radius: 100%;
-}
-
-.is-active-dot {
-	background: #FFFFFF;
-
-}
-
-.hiring-texts {
-	max-width: 600px;
-	height: 114px;
-	text-align: center;
-	margin: 20px auto;
-
-}
-
-.hiring-title {
-	max-width: 600px;
-	height: 114px;
-	font-size: 38px;
-	font-weight: 700;
-	line-height: 57px;
-	letter-spacing: 0em;
-	margin: 16px;
-}
-
-.hiring-sub-title {
-	width: 653px;
-	height: 83px;
-}
-
-.is-blue {
-	color: #425FF5;
-}
-.horizontal-line {
-	width: 620px;
-	height: 1px;
-	 background: #F0F0F0;
-	 position: absolute;
-  	top: 170px;
-}
-
-.job-apply-form-wrapper {
-	width: 100%;
-	height: 848px;
-	 padding: 550px 0;
- 	background: radial-gradient(100% 100% at 50% 0%, #464646 0%, #212121 100%);
-}
-
-
-.job-apply-form {
-	width: 1000px;
-	height: 300px;
+.texts-wrapper {
+	padding: 86px 0;
+	max-width: 1400px;
 	margin: 0 auto;
+	.is-black {
+		position: relative;
+		color: $black-color;
+		border: 0;
+		z-index: 99;
+	}
+	.sub-title {
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 40px;
+		letter-spacing: 0em;
+		text-align: center;
+		margin: 16px 0 0 0;
+		position: relative;
+		z-index: 99;
+	}
+	.particle-2 {
+		position: absolute;
+		top: 28px;
+		left: 172px;
+		z-index: -1;
+	} 
+}
+
+.landing-page-form {
+	background: radial-gradient(50% 50% at 50% 50%, #DCFFEF 0%, #76FFC0 100%);
 	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 100px 92px;
 	border-radius: 32px;
-	background-position: right;
-	object-fit: cover;
-	background-image: url("https://c.ndtvimg.com/2023-08/hg9a9nt_new-air-india-logo-650_625x300_10_August_23.jpg");
+	.bg-white {
+		background-color: $white-color;
+	}
+	.is-black {
+		border-radius: 16px;
+		background: radial-gradient(100% 100% at 50% 0%, #49453B 0%, #000000 100%);
+	}
+	
+	.login-form-logo {
+		background: radial-gradient(50% 50% at 50% 50%, #DCFFEF 0%, #76FFC0 100%);
+		border-radius: 100%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		box-shadow: 0px 4px 16px 0px #212E281A;
+	}
+	
+	.login-form-svg {
+		height: 150px;
+		width: 150px;	
+	}
+	.box-particles {
+		display: flex;
+		gap: 16px;
+		position: absolute;
+		top: -146px;
+		left: -146px;
+		.left-box, .right-box {
+			display: flex;
+			flex-direction: column;
+		}
+		.right-box {
+			margin: 16px 0 0 0;
+			gap: 16px;
+		}
+		.left-box {
+			gap: 12px;
+
+		}
+		.box {
+			width: 100px;
+			height: 100px;
+			border: 1px solid $white-color;
+			border-radius: 16px;
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+
+		}
+		.small {
+			width: 80px;
+			height: 80px;
+			align-self: flex-end;
+		}
+	}
 }
 
-.job-apply-text-wrapper {
-	background: linear-gradient(89.88deg, #32F497 43%, rgba(50, 244, 151, 0) 99.89%);
-  	border-radius: 32px;
+.landing-page-brand-logo {
 	padding: 40px;
-	display: flex;
-	flex-direction: column;
-  	gap: 32px;
-}
-
-.job-apply-heading {
-	width: 340px;
-	height: 63px;
-	font-size: 32px;
-	font-weight: 700;
-	line-height: 40px;
-	letter-spacing: 0em;
-	text-align: left;
-}
-
-.job-apply-sub-heading {
-	width: 400px;
-	height: 35px;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 24px;
-	letter-spacing: 0em;
-	text-align: left;
-}
-
-.job-apply-btn {
-	background: radial-gradient(100% 100% at 50% 0%, #664A02 0%, #150F00 100%);
-	width: 267px;
-	height: 63px;
-	border-radius: 16px;
-	box-shadow: 0px 2px 2px 0px #F0C01580 inset;
-	box-shadow: 0px -2px 2px 0px #FFFFFF80 inset;
-}
-
-@keyframes move {
-	from {
-		transform: translateX(0);
+	background-color: $white-color; }
+	.landing-page-brand-logo .brand-wrapper {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 64px;
+		.brand-logo-img {
+			height: 150px;
+			width: 250px;
+		}
 	}
-	to {
-		transform: translateX(-100%);
+
+	$testimonial-bg : $white-color;
+	.testimonial-card {
+	// background:linear-gradient( to right, #A98BFF , #6D61FF );
+	font-family: Inter;
+	
+	&-wrapper {
+		padding: 32px 0px 40px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		background-color: $testimonial-bg;
+		max-width: 600px !important;
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15); 
+		border-radius: 16px;
+		&.is-gradient {
+			background: linear-gradient(134deg, #A98BFF 0%, #6D61FF 100%), #FFF;
+		}	
+	}
+	.testimonial-modifier {
+		display: flex;
+		// position: relative;
+		height: 160px;
+
+		.testimonial-card-avatar {
+			width: 100%;
+			min-width: 180px;
+			height: 200px;
+			border-radius: 16px;
+			overflow: hidden;
+			position: relative;
+			bottom: 64px;
+			left: 16px;
+
+		}
+	}
+	// &-avatar {
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	overflow: hidden;
+	// 	// position: relative;
+	// 	// position: absolute;
+	// 	// transform: translateX(-140%);
+	// 	// top: -16%;
+	// 	// left: 6%;
+	// 	&-img {
+	// 		max-width: 200px;
+	// 		max-height: 220px;
+	// 		border-radius: 16px;
+
+	// 		position: absolute;
+	// 		width: 100%;
+	// 		bottom: 12%;
+	// 		left: 4%;
+	// 	}
+	
+	&-text {
+		padding: 0 40px;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 1.5;
+		color: $black-003;
+		text-align: left;
+		padding-bottom: 32px;
+		border-bottom: 1px solid #F0F0F0;
+	}
+	&-footer {
+		padding: 0 40px;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 20px;
+		&-left {
+			&-header {
+				font-size: 20px;
+				font-weight: 700;
+				color: $black-005;
+				line-height: 1.5;
+			}
+			&-text {
+				font-weight: 600;
+				line-height: 1.5;
+				color: $black-003;
+			}
+		}
+		&-right {
+			display: flex;
+			align-items: center;
+			&-star {
+				width: 20px;
+				fill: #FFB13D;
+			}
+		}
+	}
+	
+}
+
+.testimonial-section {
+	.section-text {
+		width: 100% !important;
+		max-width: 100%;		
+	}
+	.testimonial-slider {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 50px;
+		gap: 12px;
+		padding: 56px 0;
+		.testimonial-slider-wrapper {
+			width: 100%;
+			max-width: 620px;
+			padding-top: 60px;
+			display: flex;
+			justify-content: center;
+			gap: 12px;
+		}
+		.testimonial-slider-button {
+			padding: 10px;
+			border: 1px solid $black-color;
+			background-color: transparent;
+			border-radius: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			fill: $black-color;
+			transition: all .35s;
+			@include mobile {
+				padding: 5px
+			}
+			&:hover {
+				background-color: $black-color;
+				fill: $white-color !important;
+			}
+			&:active {
+				background-color: $black-color;
+				fill: $primary-001 !important;
+			}
+			.testimonial-slider-button-icon {
+				width: 24px;
+				height: 24px;
+			}
+		}
 	}
 }
+
+.section-text-wrapper {
+	margin: 0 auto;
+	text-align: center;
+	.section-title, .section-subtitle {
+		max-width: 100% !important;
+	}
+	.section-title {
+		width: 600px;
+		height: 130px;
+		margin: 0 auto;
+		padding: 32px 0;
+		font-size: 38px;
+		font-weight: 700;
+		line-height: 58px;
+		letter-spacing: 0em;
+		text-align: center;
+	}
+	.is-black {
+		color: $black-color;
+	}
+
+	.section-subtitle {
+		width: 654px;
+		height: 84px;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 24px;
+		letter-spacing: 0em;
+		text-align: center;
+		margin: 0 auto;
+		color: #555555;
+		padding: 26px 0 150px 0;
+	}
+}
+
+.section-wrapper {
+	.testimonial-slider-circles {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 10px;
+		padding: 20px 0;
+		.testimonial-slider-circle {
+			height: 10px;
+			width: 10px;
+			background: #FFFFFF80;
+			border-radius: 100%;
+			}.is-active {
+				padding: 0;
+				background-color: #ffffff;
+			}
+		}
+	}
+	
+	.is-blue {
+		color: #425FF5;
+	}
+
+	.bg-gradient {
+		background: radial-gradient(100% 100% at 50% 0%, #464646 0%, #212121 100%),;
+		.gradient-mask {
+			width: 100%;
+			height: 30%;
+			position: absolute;
+			background: radial-gradient(#3CDFC2, #32F497);
+		}
+	}
+	.section-mask {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 100px 0;
+
+		.section-wrapper {
+			background-position: center;
+			border-radius: 32px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}	
+		.banner-card-1 {
+			width: 1000px;
+			border-radius: 32px;
+			padding: 40px;
+			background-position: center;
+			background-size: cover;
+			object-fit: cover;
+			background-image: linear-gradient(89.88deg, #32F497 43%, rgba(50, 244, 151, 0) 99.89%),url(https://c.ndtvimg.com/2023-08/hg9a9nt_new-air-india-logo-650_625x300_10_August_23.jpg);	
+		}
+		.banner-card-texts {
+			display: flex;
+			flex-direction: column;
+			gap: 26px;
+		}
+		.banner-card-title {
+			width: 340px;
+			height: 64px;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 40px;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+		.card-subtitle {
+			width: 400px;
+			height: 35px;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 24px;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+		.card-btn {
+			width: 268px;
+			height: 64px;
+			border-radius: 16px;
+			background: radial-gradient(100% 100% at 50% 0%, #664A02 0%, #150F00 100%);
+			box-shadow: 0px 2px 2px 0px #F0C01580 inset;
+			box-shadow: 0px -2px 2px 0px #FFFFFF80 inset;
+			outline: 0;
+		}
+	}
+
+	.navbar {
+		height: 6.75rem;
+	}
+	.landing-page-nav {
+		background-color: transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		.navbar-wrapper {
+			justify-content: space-between;
+		}
+	// nav button css
+	.nav-btn-li {
+		width: 100px;
+		height: 46px;
+		border-radius: 40px;
+		background: #FFFFFF;
+	    // padding: 20px;
+	    .nav-btn {
+	    	line-height: 46px;
+	    	margin: 32px;
+	    }
+	}
+	.landing-page-logo-img {
+		max-height: 80px;
+		width: 100px;
+	}
+}
+.navbar .navbar-brand img {
+	height: 80px;
+	width: 100px;
+	margin: 32px 0;
+	padding: 16px 0 0 0;
+}
+
+
+
+
+
+

@@ -29,15 +29,15 @@
 
 	.curve-particles-wrapper {
 		width: 100%;
-		min-height: 80%;
+		min-height: 60%;
 		position: absolute;
+		overflow: hidden;
 	}
 
 	.curve-particles-svg {
-		overflow: hidden;
 		position: absolute;
-		right: -28%;
-		top: -44%;
+		right: -30%;
+  		top: -56%;
 	}
 }
 .navbar-wrapper {

@@ -1,40 +1,29 @@
 .showcase-nav {
- 	background: transparent;
- 	.nav-text {
- 		margin: 0 0 0 14px ;
- 		font-size: 16px;
- 		font-weight: 600;
- 		color: $white-color;
- }
- .navbar-menu-icon-img {
-	height: 50px;
- 	width: 50px;
- 	background: transparent;
-   }
+	background: transparent;
+	.nav-text {
+		margin: 0 0 0 14px ;
+		font-size: 16px;
+		font-weight: 600;
+		color: $white-color;
+	}
+	.navbar-menu-icon-img {
+		height: 50px;
+		width: 50px;
+		background: transparent;
+	}
 }
 
 .showcase-section {
 	background: linear-gradient(87.17deg, #091C67BD 0%, rgba(63, 66, 242, 0.5)), url("../assets/img/house.jpeg");
 	background-size: cover;
 	background-position: center;
-
 }
-
-	.hero-image {
-		height:600px;
-		max-width:1400px;
-		position:absolute;
-		top: 90px;
-		left: 48px;
-		z-index: 120;
+.hero-image {
+	margin: 64px 0 0 0;
+	width: 100%;
 }
-
-.is-btn {
-	border-radius: 40px;
+.is-bg {
 	background: #05103BBD;
 }
-.transparent-bg {
-	background: transparent;
-	border: 1px solid #ffffff;
-}
+
 

@@ -1,0 +1,63 @@
+
+.section-showcase-2 {
+	background-color: #FFFFFF;
+
+	.hero-title {
+		width: 100%;
+		max-width: 400px;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 48px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #203761;
+	}
+	
+	.hero-subtitle {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #81aaf7	;
+		width: 100%;
+		max-width: 450px;
+
+	}
+
+	.popup-card-button{
+		width: 100px;
+		height: 48px;
+		border: none;
+		border-radius: 4px;
+		font-size: 16px;
+		background-color: #192b5e;
+		color: #E0E0E0;
+	}
+
+	.popup-card-form {
+		display: flex;
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.header-part {
+		display: flex;
+
+	}
+
+	.heading {
+		color: #394d73;
+		font-weight: 700;
+		font-size: 68px;
+		font-family: "Oswald", sans-serif;
+		position: relative;
+
+	}
+
+	.img image {
+		width: 20px;
+		height: 20px;
+	}
+
+}

@@ -1,0 +1,29 @@
+.showcase-nav {
+	background: transparent;
+	.nav-text {
+		margin: 0 0 0 14px ;
+		font-size: 16px;
+		font-weight: 600;
+		color: $white-color;
+	}
+	.navbar-menu-icon-img {
+		height: 50px;
+		width: 50px;
+		background: transparent;
+	}
+}
+
+.showcase-section {
+	background: linear-gradient(87.17deg, #091C67BD 0%, rgba(63, 66, 242, 0.5)), url("../assets/img/house.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+.hero-image {
+	margin: 64px 0 0 0;
+	width: 100%;
+}
+.is-bg {
+	background: #05103BBD;
+}
+
+

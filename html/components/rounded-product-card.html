@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Shek Muktar">
+<meta name="keywords" content="metacss, css-framework, framework, css">
+<meta name="description" content="A Customizable, web UI component library">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dreamneat</title>
+<link rel="stylesheet" href="/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+  /* Additional CSS for touch effect */
+  /*.gallery img.touch-start {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }*/
+</style>
+</head>
+<body>
+  <div class="rounded-product-card">
+    <div class="gallery">
+      <img src="https://picsum.photos/id/174/400/400" alt="a hot air balloon" onclick="handleCardClick(this)" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event)">
+      <img src="https://picsum.photos/id/188/400/400" alt="a sky photo of an old city" onclick="handleCardClick(this)" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event)">
+      <img src="https://picsum.photos/id/221/400/400" alt="a small boat" onclick="handleCardClick(this)" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event)">
+      <img src="https://picsum.photos/id/288/400/400" alt="a forest" onclick="handleCardClick(this)" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event)">
+    </div>
+  </div>
+
+<script>
+function handleTouchStart(event) {
+  event.target.classList.add('touch-start');
+}
+
+function handleTouchEnd(event) {
+  event.target.classList.remove('touch-start');
+}
+</script>
+</body>
+</html>

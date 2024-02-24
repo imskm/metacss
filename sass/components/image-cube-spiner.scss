@@ -1,0 +1,51 @@
+.image-cube-spiner{
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: spin-cube 15s linear infinite;
+}
+@keyframes spin-cube {
+	 0%, 5%{
+        transform: rotateY(0deg);
+    }
+    /* Pause at 25% */
+    25%, 30% {
+        transform: rotateY(90deg);
+    }
+    /* Pause at 50% */
+    50%, 55% {
+        transform: rotateY(180deg);
+    }
+    /* Pause at 75% */
+    75%, 80% {
+        transform: rotateY(270deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+.image-cube-spiner div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+img{
+    width: 300px;
+    // height: 300
+}
+.front{
+    transform: translateZ(150px);
+}
+.right{
+    transform: rotateY(-270deg) translateX(150px);
+    transform-origin: 100% 0;
+}
+.back{
+    transform: translateZ(-150px) rotateY(180deg);
+}
+.left{
+    transform: rotateY(270deg) translateX(-150px);
+    transform-origin: 0 50%;
+}

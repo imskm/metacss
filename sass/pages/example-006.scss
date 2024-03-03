@@ -78,9 +78,11 @@
 			height: 400px;
 			padding-top: 0;
 			border-radius: 48px;
-			// box-shadow: 20px 20px 40px rgba($black-color, .2);
+			margin: 0 160px 0;
+			background: none;
 			position: relative;
-			z-index: 2;
+			// box-shadow: 20px 20px 40px rgba($black-color, .2);
+			// z-index: 2;
 		}
 	}
 	.hero-half-cover-image {
@@ -95,7 +97,6 @@
 		// opacity: .3;
 	}
 }
-
 
 .hero-half-cover-image {
 	position: relative;
@@ -115,22 +116,16 @@
 		z-index: 99;
 	}
 }
-
-.hero-image {
-	margin: 0 160px 0;
-}
-
 .hero-card-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	z-index: 1;
+	// z-index: 1;
   bottom: 130px;
   height: 100px;
 		.is-girl {
 	  position: relative;
-	  z-index: 12;
 	  height: 306px;
 	  top: 200px;
 	  width: 150px;
@@ -138,16 +133,13 @@
 
 	.is-pencil {
 		position: relative;
-	  z-index: 13;
-	  height: 240px;
 	  rotate: -45deg;
-	  top: 338px;
+	  top: 334px;
 	}
 
 	.is-ladder {
 		height: 500px;
 	  position: relative;
-	  z-index: 12;
 	  top: 100px;
 	}
 	

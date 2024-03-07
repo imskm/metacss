@@ -27,7 +27,7 @@ $section-bgcolor: $white-color;
 				padding-top: $section-padding;
 				padding-bottom: $section-padding;
 				height: 100%;
-
+				
 				@include tab {
 					padding-top: $section-padding-tab;
 					padding-bottom: $section-padding-tab;

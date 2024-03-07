@@ -6,11 +6,19 @@
 		.text-white {
 		color: #FFFFFF !important;
 		font-weight: 700; 
-	} 
-
+	}
+	.section-wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		gap: 24px;
+		.section-text {
+			width: 50%;
+		}
+	}
 }
 .section-image {
-	
+	width: 50%;
 	@include tab {
 		margin: 0 auto;
 		width: 100%;
@@ -31,9 +39,9 @@
 			background-color: transparent;
 			position: relative;
 			z-index: 2;
-			.height-full {
-				height: 100vh !important;
-				max-height: 100% !important;
+			.event-image-modifier {
+				height: 100% !important;
+				min-height: 100% !important;
 			}
 			.section-image-poster-image {
 				width: 100%;

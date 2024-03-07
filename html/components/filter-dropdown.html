@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery page filter</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div style="padding: 100px">
+       <section class="section filter-section has-no-padding">
+            <div class="container">
+                <div class="section-wrapper">
+                    <form class="gallery-filter">
+                        <div class="gallery-filter-wrapper">
+                            <div class="filter-by year">
+                                <form>
+                                    <select class="filter-by-items" name="year" id="year" required="">
+                                      <option value="0" disabled="" selected="">Years</option>
+                                      <option value="2023">Year 2023</option>
+                                      <option value="2022">Year 2022</option>
+                                      <option value="2021">Year 2021</option>
+                                      <option value="2020">Year 2020</option>
+                                  </select>
+                              </form>
+                          </div>
+                          <div class="filter-by event">
+                                <form class="width-full">
+                                    <select class="filter-by-items" name="event" id="event" required="">
+                                        <option value="--" disabled="" selected="">Select an event</option>
+                                        <option value="wedding">Wedding</option>
+                                        <option value="birthday">Birthday Bash</option>
+                                        <option value="engagement">Engagement</option>
+                                        <option value="holi">Holi</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="section-cta">
+                                <button class="section-button  is-fullrounded">Filter</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>  
+    </div> 
+</body>
+</html>

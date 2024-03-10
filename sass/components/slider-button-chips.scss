@@ -1,0 +1,22 @@
+.slider-button-chips {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	overflow-x: scroll;
+	&-btn {
+		font-size: 0.875rem;
+		line-height: 1;
+		padding: 0.75rem 1.25rem;
+		white-space: nowrap;
+		text-decoration: inherit;
+		border-radius: 9999px;
+		background-color: $black-001;
+		color: $black-004;
+		border: 1px solid transparent;
+		&.is-active {
+			color: $black-color;
+			border: 1px solid $black-color;
+		}
+	}
+}

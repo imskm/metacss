@@ -1,0 +1,38 @@
+.contact-section-2 {
+  .contact-details {
+  	display: flex;
+  	width: 100%;
+  	gap: 20px;
+  	@include mobile-md {
+  		flex-direction: column;
+  	}
+  	.contact-detail {
+  		display: flex;
+  		flex-direction: column;
+  		margin: 0 auto;
+  		@include mobile-md {
+  			align-items: center;
+  		}
+  		.contact-detail-icon {
+  			svg {
+  				height: 48px;
+  				width: 48px;
+  				fill: $white-color
+  			}
+  		}
+  		.contact-detail-heading {
+  			font-size: 24px;
+  			font-weight: 600;
+  			color: $white-color;
+  		}
+  		.contact-detail-text {
+  			a {
+  				color: $white-color;
+  				&:hover {
+  					text-decoration: underline;
+  				}
+  			}
+  		}
+  	}
+  }	
+}

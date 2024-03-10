@@ -1,0 +1,106 @@
+.pricing-section {
+	background-color: $primary-006 !important;
+	.section-wrapper {
+		display: block !important;
+	}
+	.pricing-cards {
+		display: flex;
+		// align-items: center;
+		// justify-content: center;
+		gap: 30px;
+		width: 100%;
+		margin-bottom: 80px;
+		.pricing-card {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			max-width: 360px;
+			height: 100%;
+			max-height: 450px;
+			background-color: $primary-007;
+			box-shadow: 0px 16px 64px rgba(0, 0, 0, 0.05);
+			position: relative;
+			z-index: 2;
+
+			&::after {
+				content: "";
+				width: 100%;
+				max-width: 336px;
+				height: 100%;
+				background-color: $white-color;
+				position: absolute;
+				bottom: -16px;
+				z-index: -1;
+				margin: 0 auto;
+				align-self: center;
+			}
+			.pricing-card-header {
+				padding: 64px 60px;
+				.pricing-card-header-title {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 1.25;
+					margin-bottom: 12px;
+					color: $black-005;
+					text-align: center;
+				}
+				.pricing-card-header-subtitle {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					color: $black-005;
+					line-height: 1.25;
+					.pricing-card-header-subtitle-amount {
+						display: inline-flex;
+						font-size: 48px;
+						font-weight: 700;
+						font-family: 'Playfair Display';
+						position: relative;
+						text-align: center;
+						.pricing-card-header-subtitle-symbol {
+							font-size: 20px;
+							position: absolute;
+							left: -8%;
+							font-family: inter;
+						}
+					}
+					.pricing-card-header-subtitle-time {
+						font-size: 14px;
+						font-weight: 600;
+						text-align: center;
+						margin-top: 20px;
+					}
+
+				}
+				.section-cta {
+					margin-top: 32px !important;
+				}
+			}
+			.pricing-card-footer {
+				padding: 32px 64px;
+				.pricing-card-footer-details {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					.pricing-card-footer-detail {
+						list-style-type: disc;
+						font-size: 14px;
+						line-height: 1.25;
+						color: $black-004;
+					}
+				}
+			}
+		}
+	}
+}
+.pricing-card.main-card {
+	max-width: 420px !important;
+	max-height: 520px !important;
+	background-color: #F1FFE0 !important;
+	.pricing-card-header {
+		padding: 74px 70px !important;
+		.pricing-card-header-subtitle-time {
+			margin-top: 24px !important;
+		}
+	}
+}
